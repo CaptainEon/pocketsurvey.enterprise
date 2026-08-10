@@ -385,13 +385,13 @@
     </script>
 <script>
   document.addEventListener('click', function(e) {
-    // Find the closest parent <a> tag if the icon or text inside was clicked
-    const anchor = e.target.closest('a[href^="#"]');
+    // Strictly target hero sector pills or inner elements (icons/spans)
+    const pill = e.target.closest('.ps-sector-pill');
     
-    if (!anchor) return;
+    if (!pill) return;
 
-    const href = anchor.getAttribute('href');
-    if (!href || href === '#') return;
+    const href = pill.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
 
     const targetId = href.substring(1);
     const targetElement = document.getElementById(targetId);
@@ -399,13 +399,11 @@
     if (targetElement) {
       e.preventDefault();
 
-      // Highlight clicked pill if applicable
-      if (anchor.classList.contains('ps-sector-pill')) {
-        document.querySelectorAll('.ps-sector-pill').forEach(p => p.classList.remove('is-active'));
-        anchor.classList.add('is-active');
-      }
+      // Highlight active pill state
+      document.querySelectorAll('.ps-sector-pill').forEach(p => p.classList.remove('is-active'));
+      pill.classList.add('is-active');
 
-      // Calculate position offset for 90px sticky header
+      // Calculate smooth scroll position considering sticky header
       const headerOffset = 90;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -415,7 +413,7 @@
         behavior: 'smooth'
       });
 
-      // Update URL hash without abrupt jumping
+      // Update URL hash cleanly
       if (history.pushState) {
         history.pushState(null, null, href);
       } else {
