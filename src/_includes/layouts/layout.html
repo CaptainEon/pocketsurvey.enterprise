@@ -383,49 +383,47 @@
         });
       }
     </script>
- <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Target both Hero Pills AND Header Dropdown Items
-    const clickables = document.querySelectorAll('.ps-sector-pill, .ps-dropdown-item');
+<script>
+  document.addEventListener('click', function(e) {
+    // Find the closest parent <a> tag if the icon or text inside was clicked
+    const anchor = e.target.closest('a[href^="#"]');
+    
+    if (!anchor) return;
 
-    clickables.forEach(item => {
-      item.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
-        
-        if (href && href.startsWith('#')) {
-          e.preventDefault();
-          const targetId = href.substring(1); // Remove the '#'
-          const targetElement = document.getElementById(targetId);
+    const href = anchor.getAttribute('href');
+    if (!href || href === '#') return;
 
-          // Highlight clicked pill if it's a sector pill
-          if (this.classList.contains('ps-sector-pill')) {
-            document.querySelectorAll('.ps-sector-pill').forEach(p => p.classList.remove('is-active'));
-            this.classList.add('is-active');
-          }
+    const targetId = href.substring(1);
+    const targetElement = document.getElementById(targetId);
 
-          if (targetElement) {
-            // Calculate precise pixel location accounting for the 90px sticky header
-            const headerOffset = 90;
-            const elementPosition = targetElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    if (targetElement) {
+      e.preventDefault();
 
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
+      // Highlight clicked pill if applicable
+      if (anchor.classList.contains('ps-sector-pill')) {
+        document.querySelectorAll('.ps-sector-pill').forEach(p => p.classList.remove('is-active'));
+        anchor.classList.add('is-active');
+      }
 
-            // Update URL hash without forcing an abrupt jump
-            if (history.pushState) {
-              history.pushState(null, null, href);
-            } else {
-              location.hash = href;
-            }
-          } else {
-            console.warn('Target section not found for ID:', targetId);
-          }
-        }
+      // Calculate position offset for 90px sticky header
+      const headerOffset = 90;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
       });
-    });
+
+      // Update URL hash without abrupt jumping
+      if (history.pushState) {
+        history.pushState(null, null, href);
+      } else {
+        location.hash = href;
+      }
+    } else {
+      console.warn('No target element found for ID:', targetId);
+    }
   });
 </script>
   </body>
