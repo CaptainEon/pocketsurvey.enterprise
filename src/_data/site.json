@@ -1,9 +1,6 @@
 {
-  "base_url": "https://large-leek.cloudvent.net/",
-  "site_title": "Eleventy Starter",
-  "description": "A starter template for Eleventy, using CloudCannon editable regions - for CloudCannon CMS.",
-  "twitter_site": "",
-  "image": "",
-  "image_alt": "",
-  "favicon": "/assets/images/favicon.png"
+  "name": "PocketSurvey Enterprise",
+  "title": "PocketSurvey Enterprise | Mobile Surveying & Asset Management",
+  "description": "Mobile surveying and asset management software built for UK local authorities, housing associations, and commercial surveying practices.",
+  "url": "https://pocketsurvey.com"
 }
