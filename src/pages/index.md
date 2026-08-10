@@ -4,8 +4,8 @@ title: Home
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Eleventy,
-    using CloudCannon editable regions. Create your own copy, and start
-    creating your own components to use in the CloudCannon CMS.
+    using CloudCannon editable regions. Create your own copy, and start creating
+    your own components to use in the CloudCannon CMS.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -24,9 +24,8 @@ content_blocks:
     subheading:
       markdown_content: >-
         A starting point for **developers looking to build a website with
-        Eleventy, using CloudCannon editable regions**. Create your own
-        copy, and start creating your own components to use in the CloudCannon
-        CMS.
+        Eleventy, using CloudCannon editable regions**. Create your own copy,
+        and start creating your own components to use in the CloudCannon CMS.
       color: '#393939'
     image:
       image_path: /assets/images/undraw-online-test.svg
@@ -58,28 +57,29 @@ content_blocks:
       markdown_content: >-
         To help save you time, some features are set up in this template, like:
 
-        - [Editable
+
+        * [Editable
         regions](https://cloudcannon.com/documentation/articles/introduction-to-editable-regions/)
 
-        - Blog with pagination, tags and
+        * Blog with pagination, tags and
         [snippets](https://cloudcannon.com/documentation/articles/snippets-using-eleventy-shortcodes/)
 
-        - [Image optimization](https://www.11ty.dev/docs/plugins/image/)
+        * [Image optimization](https://www.11ty.dev/docs/plugins/image/)
 
-        - SEO Controls
+        * SEO Controls
 
-        - Responsive header and footer
+        * Responsive header and footer
 
-        - [Font Awesome
-        Icons](https://fontawesome.com/search?o=r&m=free&s=solid)
+        * [Font Awesome
+        Icons](https://fontawesome.com/search?o=r&amp;m=free&amp;s=solid)
 
-        - Schemas for adding new pages
+        * Schemas for adding new pages
 
-        - Editable color pallete
+        * Editable color pallete
 
-        - Markdown styles
+        * Markdown styles
 
-        - CloudCannon configuration
+        * CloudCannon configuration
       color: '#393939'
     image:
       image_path: /assets/images/undraw-hello.svg
@@ -98,9 +98,9 @@ content_blocks:
       text_color: '#ffffff'
   - _type: components/left-right
     background_color: '#ffffff'
-    flipped: false
     heading:
       heading_text: You choose your editing experience.
+      color: '#393939'
       text_color: '#333232'
     text:
       markdown_content: >-
@@ -115,6 +115,7 @@ content_blocks:
         Git-backed means you can keep all your familiar git workflows, while
         providing an easy-to-understand interface for non-technical editors to
         collaborate via Git.
+      color: '#393939'
       text_color: '#333232'
     image:
       image_path: /assets/images/undraw-startup.svg
@@ -123,23 +124,23 @@ content_blocks:
         laptop that comes up their waist. One of their hands is on the back of
         the laptop, and one is in their pocket. On the laptop screen is an
         illustration of the world.
+    flipped: false
     button:
       _type: components/buttons/primary
       button_text: GitHub
       button_icon: fa-brands fa-github
       button_link: https://github.com/CloudCannon/eleventy-starter/
-      button_aria_label:
       background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
+      button_aria_label:
   - _type: components/featured-posts
     background_color: '#ffffff'
     heading:
       heading_text: Featured posts
       color: '#393939'
     description:
-      markdown_content: >-
-        A hand-picked selection of posts from the blog.
+      markdown_content: A hand-picked selection of posts from the blog.
       color: '#393939'
     limit: 3
 ---
