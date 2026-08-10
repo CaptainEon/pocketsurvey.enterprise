@@ -1,47 +1,34 @@
-<div class="left-right" style="background-color: {{background_color}};">
-  {% if flipped %}
-      <div class="left-right__wrapper">
-        <div class="order-2 md:order-1">
-          {% if image.image_path %}
-            <div data-editable="image" data-prop-src="image.image_path" data-prop-alt="image.alt_text">
-              {% include "components/image", image_path: image.image_path, alt_text: image.alt_text, image_sizes: "(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px" %}
-            </div>
-          {% endif %}
+<section {% if id_anchor != blank %}id="{{ id_anchor }}"{% endif %} class="w3-padding-64" style="background-color: {{ background_color | default: '#ffffff' }}; border-bottom: 1px solid #E4E4E7; scroll-margin-top: 80px;">
+  <div class="w3-content" style="max-width: 1200px; padding: 0 24px;">
+    
+    <!-- Wrapper controls mobile vs desktop layout order -->
+    <div class="ps-left-right-wrapper {% if flipped %}is-flipped{% endif %}">
+      
+      <!-- Text Column (Always Order 1 on Mobile) -->
+      <div class="ps-lr-content">
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: {{ heading.color | default: '#0F172A' }}; margin-top: 0; margin-bottom: 20px; line-height: 1.2;">
+          {{ heading.heading_text }}
+        </h2>
+
+        <div class="markdown-text" style="font-size: 1.05rem; line-height: 1.65; color: {{ text.color | default: '#334155' }}; margin-bottom: 28px;">
+          {% if text.markdown_content %}{{ text.markdown_content | renderMarkdown }}{% endif %}
         </div>
-        <div class="left-right__text order-1 md:order-2">
-          <h2 class="text-4xl" style="color: {{heading.color}};" data-editable="text" data-type="span" data-prop="heading.heading_text">
-            {{heading.heading_text}}
-          </h2>
-          <div class="mb-4 markdown-text" style="color: {{text.color}};" data-editable="text" data-type="block" data-prop="text.markdown_content">
-            {% if text.markdown_content %}{{ text.markdown_content | renderMarkdown }}{% endif %}
-          </div>
-          {% if button %}
-            {% assign _buttonType = button._type %}
-            {% includeWith _buttonType, button %}
-          {% endif %}
+
+        {% if button.button_link != blank %}
+          <a href="{{ button.button_link }}" class="ps-header-cta" style="font-size: 0.95rem; padding: 10px 22px; display: inline-flex; align-items: center; text-decoration: none;">
+            {{ button.button_text }} <i class="{{ button.button_icon | default: 'fa-solid fa-arrow-right' }}" style="margin-left: 8px;"></i>
+          </a>
+        {% endif %}
+      </div>
+
+      <!-- Image Column (Always Order 2 on Mobile) -->
+      <div class="ps-lr-image">
+        <div class="w3-card w3-round-large" style="background: #FFFFFF; border: 1px solid #E4E4E7; padding: 16px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);">
+          {% include "components/image", image_path: image.image_path, alt_text: image.alt_text %}
         </div>
       </div>
-  {% else %}
-      <div class="left-right__wrapper">
-        <div class="left-right__text">
-          <h2 class="text-4xl" style="color: {{heading.color}};" data-editable="text" data-type="span" data-prop="heading.heading_text">
-            {{heading.heading_text}}
-          </h2>
-          <div class="mb-4 markdown-text" style="color: {{text.color}};" data-editable="text" data-type="block" data-prop="text.markdown_content">
-            {% if text.markdown_content %}{{ text.markdown_content | renderMarkdown }}{% endif %}
-          </div>
-          {% if button %}
-            {% assign _buttonType = button._type %}
-            {% includeWith _buttonType, button %}
-          {% endif %}
-        </div>
-        <div>
-          {% if image.image_path %}
-            <div data-editable="image" data-prop-src="image.image_path" data-prop-alt="image.alt_text">
-              {% include "components/image", image_path: image.image_path, alt_text: image.alt_text, image_sizes: "(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px" %}
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    {% endif %}
-</div>
+
+    </div>
+
+  </div>
+</section>
