@@ -368,6 +368,115 @@ html {
 html {
   scroll-behavior: smooth;
 }
+      /* Smooth Scroll for Anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Sector Pills Grid */
+.ps-hero-sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .ps-hero-sectors-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ps-sector-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E7;
+  border-radius: 8px;
+  color: #18181B !important;
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ps-sector-pill:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: var(--pill-color, #1A73E8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--pill-color, #1A73E8);
+  transform: translateY(-2px);
+}
+
+.ps-sector-pill i {
+  font-size: 1.05rem;
+  transition: transform 0.2s ease;
+}
+
+.ps-sector-pill:hover i {
+  transform: scale(1.15);
+}
+
+/* Secondary Find Out More Button */
+.ps-hero-secondary-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  color: #18181B !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid #D4D4D8;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ps-hero-secondary-cta:hover {
+  background-color: #F4F4F5;
+  border-color: #A1A1AA;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Left-Right Sections: Mobile Text First Order */
+.ps-left-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+.ps-lr-content {
+  width: 100%;
+  order: 1; /* Text always first on mobile */
+}
+
+.ps-lr-image {
+  width: 100%;
+  order: 2; /* Image always second on mobile */
+}
+
+@media (min-width: 992px) {
+  .ps-left-right-wrapper {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .ps-lr-content, .ps-lr-image {
+    flex: 1;
+    width: 50%;
+  }
+
+  .ps-left-right-wrapper.is-flipped .ps-lr-content {
+    order: 2;
+  }
+  .ps-left-right-wrapper.is-flipped .ps-lr-image {
+    order: 1;
+  }
+}
     </style>
   </head>
   <body>
