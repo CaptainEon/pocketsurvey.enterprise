@@ -22,27 +22,28 @@
 
     <style>
       :root {
-        --ps-navy: #0F172A;
-        --ps-slate: #475569;
-        --ps-light-bg: #F8FAFC;
-        --ps-blue: #2563EB;
-        --ps-blue-hover: #1D4ED8;
-        --ps-border: #CBD5E1;
+        --ps-black: #000000;
+        --ps-dark: #111111;
+        --ps-gray-dark: #333333;
+        --ps-gray-light: #F4F4F5;
+        --ps-border: #E4E4E7;
+        --ps-google-blue: #1A73E8;
+        --ps-google-blue-hover: #1557B0;
       }
       body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        color: var(--ps-navy);
+        color: var(--ps-black);
         background-color: #FFFFFF;
         -webkit-font-smoothing: antialiased;
       }
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Inter', sans-serif;
         letter-spacing: -0.02em;
+        color: var(--ps-black);
       }
       .ps-badge {
-        background: rgba(37, 99, 235, 0.2);
-        color: #60A5FA;
-        border: 1px solid rgba(96, 165, 250, 0.3);
+        background: #000000;
+        color: #FFFFFF;
         font-size: 0.65rem;
         font-weight: 700;
         padding: 3px 8px;
@@ -50,29 +51,29 @@
         letter-spacing: 0.8px;
       }
       .ps-btn-primary {
-        background-color: var(--ps-blue) !important;
+        background-color: var(--ps-google-blue) !important;
         color: #FFFFFF !important;
         font-weight: 600;
         border-radius: 6px;
         transition: background-color 0.15s ease;
       }
       .ps-btn-primary:hover {
-        background-color: var(--ps-blue-hover) !important;
+        background-color: var(--ps-google-blue-hover) !important;
       }
       .ps-btn-outline {
-        border: 1px solid var(--ps-border) !important;
-        color: var(--ps-navy) !important;
+        border: 1px solid var(--ps-black) !important;
+        color: var(--ps-black) !important;
         background-color: #FFFFFF !important;
         font-weight: 600;
         border-radius: 6px;
       }
       .ps-btn-outline:hover {
-        background-color: var(--ps-light-bg) !important;
+        background-color: var(--ps-gray-light) !important;
       }
 
-      /* Header Custom Overrides - Bypassing W3.CSS */
+      /* Header Custom Overrides */
       .ps-top-link {
-        color: #94A3B8 !important;
+        color: #A1A1AA !important;
         text-decoration: none;
         font-weight: 500;
         transition: color 0.15s ease;
@@ -81,7 +82,7 @@
         color: #FFFFFF !important;
       }
       .ps-nav-link {
-        color: #F1F5F9 !important;
+        color: #FFFFFF !important;
         background: transparent !important;
         border: none !important;
         padding: 8px 16px !important;
@@ -90,59 +91,25 @@
         text-decoration: none !important;
         cursor: pointer;
         border-radius: 6px;
-        transition: color 0.15s ease, background-color 0.15s ease;
+        transition: background-color 0.15s ease;
       }
       .ps-nav-link:hover {
-        color: #FFFFFF !important;
-        background-color: rgba(255, 255, 255, 0.08) !important;
+        background-color: rgba(255, 255, 255, 0.1) !important;
       }
       .ps-header-cta {
-        background-color: #2563EB !important;
+        background-color: #1A73E8 !important;
         color: #FFFFFF !important;
         font-weight: 600 !important;
         font-size: 0.95rem !important;
         padding: 9px 20px !important;
         border-radius: 6px !important;
         text-decoration: none !important;
-        margin-left: 12px;
-        box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+        margin-left: 8px;
+        box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
         transition: background-color 0.15s ease;
       }
       .ps-header-cta:hover {
-        background-color: #1D4ED8 !important;
-      }
-      
-      /* Pure CSS Dropdown Logic */
-      .ps-dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      .ps-dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 290px;
-        background-color: #1E293B;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 10px;
-        padding: 8px 0;
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
-        z-index: 10000;
-      }
-      .ps-dropdown:hover .ps-dropdown-menu {
-        display: block;
-      }
-      .ps-dropdown-item {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 12px 18px;
-        text-decoration: none;
-        transition: background-color 0.15s ease;
-      }
-      .ps-dropdown-item:hover {
-        background-color: rgba(255, 255, 255, 0.08) !important;
+        background-color: #1557B0 !important;
       }
     </style>
   </head>
