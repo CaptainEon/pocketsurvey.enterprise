@@ -1,12 +1,9 @@
-<button
-  style="--hover_brightness: {{ hover_brightness }}; background-color: transparent; border: 2px solid {{text_color}}"
-  class="button">
-  <a style="color: {{text_color}}" href="{{button_link}}">
-    {% if button_icon %}
-      <span class="button__icon">
-        {% include "components/icon", icon: button_icon %}
-      </span>
-    {% endif %}
-    {{button_text}}
-  </a>
-</button>
+<a 
+  href="{{ button.button_link | default: '#' }}" 
+  class="w3-button ps-btn-outline" 
+  style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; font-weight: 600; text-decoration: none; border: 1px solid #CBD5E1 !important; color: #0F172A !important; background-color: #FFFFFF !important; border-radius: 6px;">
+  {% if button.button_icon %}
+    <i class="{{ button.button_icon }}" style="color: #475569;"></i>
+  {% endif %}
+  <span style="color: #0F172A !important;">{{ button.button_text }}</span>
+</a>
