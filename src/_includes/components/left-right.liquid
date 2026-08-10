@@ -1,4 +1,4 @@
-{% comment %} Fallback ID generator from heading text if id_anchor is blank {% endcomment %}
+{% comment %} Ensure an ID always exists: use id_anchor if present, otherwise auto-slugify the heading {% endcomment %}
 {% assign section_id = id_anchor %}
 {% if section_id == blank or section_id == null %}
   {% assign section_id = heading.heading_text | downcase | replace: ' ', '-' | replace: '&', '' | replace: '--', '-' %}
