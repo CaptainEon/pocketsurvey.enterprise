@@ -383,27 +383,45 @@
         });
       }
     </script>
-    <script>
+ <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const pills = document.querySelectorAll('.ps-sector-pill');
+    // Target both Hero Pills AND Header Dropdown Items
+    const clickables = document.querySelectorAll('.ps-sector-pill, .ps-dropdown-item');
 
-    pills.forEach(pill => {
-      pill.addEventListener('click', function(e) {
-        const targetId = this.getAttribute('href');
+    clickables.forEach(item => {
+      item.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
         
-        // 1. Remove active class from all pills & highlight the clicked one
-        pills.forEach(p => p.classList.remove('is-active'));
-        this.classList.add('is-active');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const targetId = href.substring(1); // Remove the '#'
+          const targetElement = document.getElementById(targetId);
 
-        // 2. Smooth scroll to target section
-        if (targetId && targetId.startsWith('#')) {
-          const targetElement = document.querySelector(targetId);
+          // Highlight clicked pill if it's a sector pill
+          if (this.classList.contains('ps-sector-pill')) {
+            document.querySelectorAll('.ps-sector-pill').forEach(p => p.classList.remove('is-active'));
+            this.classList.add('is-active');
+          }
+
           if (targetElement) {
-            e.preventDefault();
-            targetElement.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+            // Calculate precise pixel location accounting for the 90px sticky header
+            const headerOffset = 90;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
             });
+
+            // Update URL hash without forcing an abrupt jump
+            if (history.pushState) {
+              history.pushState(null, null, href);
+            } else {
+              location.hash = href;
+            }
+          } else {
+            console.warn('Target section not found for ID:', targetId);
           }
         }
       });
