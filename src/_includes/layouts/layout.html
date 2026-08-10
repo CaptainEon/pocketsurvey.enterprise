@@ -1,47 +1,74 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title | default: "PocketSurvey Enterprise | Mobile Surveying & Asset Management" }}</title>
 
-    <!-- Add fonts -->
+    <!-- Professional SaaS Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Add TailwindCSS -->
-    <link rel="stylesheet" href='/assets/styles/tailwind.css'>
-    <!-- Add general + component styles -->
-    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Add editor styles -->
+    <!-- Utility & Framework CSS -->
+    <link rel="stylesheet" href="/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CloudCannon Visual Editor Support -->
     <link rel="stylesheet" href="/.cloudcannon/css/editor.css" />
 
-    <!-- Add SEO -->
+    <!-- SEO Partial -->
     {% include 'partials/seo.html' %}
 
-    <!-- Add Alpine -->
+    <!-- AlpineJS -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 
-    <!-- Add FontAwesome Icons -->
-    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    </head>
-    <body>
-        {% include 'partials/navigation/header.html' %}
-        <main id="main">
-            {{ content }}
-        </main>
-        {% include 'partials/navigation/footer.html' %}
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        color: #0F172A;
+        background-color: #FFFFFF;
+        -webkit-font-smoothing: antialiased;
+      }
+      .ps-header {
+        background-color: #0F172A;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .ps-badge {
+        background: #2563EB;
+        color: #FFFFFF;
+        font-size: 0.65rem;
+        font-weight: 700;
+        padding: 2px 7px;
+        border-radius: 4px;
+        letter-spacing: 0.5px;
+        vertical-align: middle;
+        margin-left: 6px;
+      }
+    </style>
+  </head>
+  <body>
 
-        <!-- CloudCannon editable regions: load the live-editing bundle only inside the Visual Editor -->
-        <script>
-          if (window.inEditorMode) {
-            import("/register-components.js").catch((error) => {
-              console.warn("Failed to load CloudCannon component registration:", error);
-            });
-          }
-        </script>
-    </body>
+    <!-- Enterprise Navigation Header -->
+    {% include 'partials/navigation/header.html' %}
+
+    <!-- Dynamic Content Injector -->
+    <main id="main">
+      {{ content }}
+    </main>
+
+    <!-- Enterprise Navigation Footer -->
+    {% include 'partials/navigation/footer.html' %}
+
+    <!-- CloudCannon Live Registration -->
+    <script>
+      if (window.inEditorMode) {
+        import("/register-components.js").catch((error) => {
+          console.warn("Failed to load CloudCannon component registration:", error);
+        });
+      }
+    </script>
+  </body>
 </html>
