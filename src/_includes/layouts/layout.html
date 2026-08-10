@@ -383,5 +383,32 @@
         });
       }
     </script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const pills = document.querySelectorAll('.ps-sector-pill');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        
+        // 1. Remove active class from all pills & highlight the clicked one
+        pills.forEach(p => p.classList.remove('is-active'));
+        this.classList.add('is-active');
+
+        // 2. Smooth scroll to target section
+        if (targetId && targetId.startsWith('#')) {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+  });
+</script>
   </body>
 </html>
