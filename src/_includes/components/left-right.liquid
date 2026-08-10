@@ -1,7 +1,12 @@
-<section {% if id_anchor != blank %}id="{{ id_anchor }}"{% endif %} class="w3-padding-64" style="background-color: {{ background_color | default: '#ffffff' }}; border-bottom: 1px solid #E4E4E7; scroll-margin-top: 80px;">
+{% comment %} Fallback ID generator from heading text if id_anchor is blank {% endcomment %}
+{% assign section_id = id_anchor %}
+{% if section_id == blank or section_id == null %}
+  {% assign section_id = heading.heading_text | downcase | replace: ' ', '-' | replace: '&', '' | replace: '--', '-' %}
+{% endif %}
+
+<section id="{{ section_id }}" class="w3-padding-64" style="background-color: {{ background_color | default: '#ffffff' }}; border-bottom: 1px solid #E4E4E7; scroll-margin-top: 90px; position: relative;">
   <div class="w3-content" style="max-width: 1200px; padding: 0 24px;">
     
-    <!-- Wrapper controls mobile vs desktop layout order -->
     <div class="ps-left-right-wrapper {% if flipped %}is-flipped{% endif %}">
       
       <!-- Text Column (Always Order 1 on Mobile) -->
