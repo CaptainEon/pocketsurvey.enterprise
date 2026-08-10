@@ -1,20 +1,20 @@
 <!-- Top Compliance Utility Bar -->
-<div style="background-color: #0F172A; color: #94A3B8; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.8125rem;">
+<div style="background-color: #0F172A; color: #94A3B8; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 0.8125rem; position: relative; z-index: 1001;">
   <div style="max-width: 1240px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center;">
     <span style="font-weight: 500; color: #CBD5E1; display: flex; align-items: center; gap: 8px;">
       <i class="fa-solid fa-shield-halved" style="color: #3B82F6;"></i> UK Social Housing Compliance &bull; Decent Homes &amp; HHSRS Ready
     </span>
     <div style="display: flex; gap: 20px;" class="w3-hide-small">
-      <a href="/reports/index.htm" class="ps-top-link">Sample Reports</a>
-      <a href="/demos/index.htm" class="ps-top-link">Demo Videos</a>
-      <a href="/pricing.htm" class="ps-top-link">Pricing</a>
+      <a href="/reports/index.htm" style="color: #94A3B8; text-decoration: none; font-weight: 500;">Sample Reports</a>
+      <a href="/demos/index.htm" style="color: #94A3B8; text-decoration: none; font-weight: 500;">Demo Videos</a>
+      <a href="/pricing.htm" style="color: #94A3B8; text-decoration: none; font-weight: 500;">Pricing</a>
     </div>
   </div>
 </div>
 
 <!-- Main High-Contrast SaaS Header -->
-<header style="position: sticky; top: 0; z-index: 9999; background-color: #0B0F19; border-bottom: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5); padding: 14px 0;">
-  <div style="max-width: 1240px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center;">
+<header style="position: sticky; top: 0; z-index: 9999; background-color: #0B0F19; border-bottom: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5); padding: 14px 0; overflow: visible;">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: space-between; align-items: center; overflow: visible;">
     
     <!-- Enterprise Brand Logo & Mark -->
     <a href="/" style="display: inline-flex; align-items: center; gap: 12px; text-decoration: none;">
@@ -30,43 +30,47 @@
     </a>
 
     <!-- Navigation Links -->
-    <nav style="display: flex; align-items: center; gap: 8px;" class="w3-hide-small">
+    <nav style="display: flex; align-items: center; gap: 12px; overflow: visible;" class="w3-hide-small">
       
-      <!-- Custom Pure CSS Dropdown -->
-      <div class="ps-dropdown">
-        <button class="ps-nav-link" style="display: flex; align-items: center; gap: 6px;">
-          Who We Serve <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; color: #94A3B8;"></i>
+      <!-- W3.CSS Dropdown with Inline Styles Override -->
+      <div class="w3-dropdown-hover" style="background: transparent !important; overflow: visible;">
+        <button class="w3-button w3-hover-none" style="background: transparent !important; color: #F1F5F9 !important; font-weight: 600; font-size: 0.95rem; padding: 8px 16px; border: none;">
+          Who We Serve <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; color: #94A3B8; margin-left: 4px;"></i>
         </button>
-        <div class="ps-dropdown-menu">
-          <a href="/sectors/surveying-practices/" class="ps-dropdown-item">
+        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="width: 290px; background-color: #1E293B !important; color: #FFFFFF !important; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; padding: 8px 0; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.6); position: absolute; top: 100%; left: 0; z-index: 10000;">
+          
+          <a href="/sectors/surveying-practices/" class="w3-bar-item w3-button w3-hover-none" style="padding: 12px 18px; text-decoration: none; display: flex; align-items: center; gap: 12px; background: transparent !important;">
             <i class="fa-solid fa-briefcase" style="color: #3B82F6; font-size: 1.1rem;"></i>
             <div>
               <div style="font-weight: 700; color: #FFFFFF; font-size: 0.9rem;">Surveying Practices</div>
               <div style="font-size: 0.75rem; color: #94A3B8;">Instant client-ready PDF reports</div>
             </div>
           </a>
-          <a href="/sectors/housing-associations/" class="ps-dropdown-item">
+
+          <a href="/sectors/housing-associations/" class="w3-bar-item w3-button w3-hover-none" style="padding: 12px 18px; text-decoration: none; display: flex; align-items: center; gap: 12px; background: transparent !important;">
             <i class="fa-solid fa-building-user" style="color: #22C55E; font-size: 1.1rem;"></i>
             <div>
               <div style="font-weight: 700; color: #FFFFFF; font-size: 0.9rem;">Housing Associations</div>
               <div style="font-size: 0.75rem; color: #94A3B8;">30-year CapEx &amp; Decent Homes</div>
             </div>
           </a>
-          <a href="/sectors/councils/" class="ps-dropdown-item">
+
+          <a href="/sectors/councils/" class="w3-bar-item w3-button w3-hover-none" style="padding: 12px 18px; text-decoration: none; display: flex; align-items: center; gap: 12px; background: transparent !important;">
             <i class="fa-solid fa-landmark" style="color: #F59E0B; font-size: 1.1rem;"></i>
             <div>
               <div style="font-weight: 700; color: #FFFFFF; font-size: 0.9rem;">Local Councils</div>
               <div style="font-size: 0.75rem; color: #94A3B8;">Municipal auditing workflows</div>
             </div>
           </a>
+
         </div>
       </div>
 
-      <a href="/reports/index.htm" class="ps-nav-link">Sample Reports</a>
-      <a href="/pricing.htm" class="ps-nav-link">Pricing</a>
+      <a href="/reports/index.htm" style="color: #F1F5F9; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 16px;">Sample Reports</a>
+      <a href="/pricing.htm" style="color: #F1F5F9; text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 16px;">Pricing</a>
 
       <!-- Primary High-Ticket CTA -->
-      <a href="/enquiry.htm" class="ps-header-cta">
+      <a href="/enquiry.htm" style="background-color: #2563EB; color: #FFFFFF; font-weight: 600; font-size: 0.95rem; padding: 9px 20px; border-radius: 6px; text-decoration: none; margin-left: 8px; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4); display: inline-block;">
         Book Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
       </a>
 
