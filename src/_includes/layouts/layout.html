@@ -5,64 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title | default: "PocketSurvey Enterprise | Mobile Surveying & Asset Management" }}</title>
 
-    <!-- Professional SaaS Typography -->
+    <!-- Crisp Minimalist Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- Utility & Framework CSS -->
-    <link rel="stylesheet" href="/assets/styles/tailwind.css">
-    <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
 
     <!-- CloudCannon Visual Editor Support -->
     <link rel="stylesheet" href="/.cloudcannon/css/editor.css" />
 
-    <!-- SEO Partial -->
     {% include 'partials/seo.html' %}
 
-    <!-- AlpineJS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
-
     <style>
+      :root {
+        --ps-navy: #0F172A;
+        --ps-slate: #475569;
+        --ps-light-bg: #F8FAFC;
+        --ps-blue: #2563EB;
+        --ps-blue-hover: #1D4ED8;
+        --ps-border: #E2E8F0;
+      }
       body {
-        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-        color: #0F172A;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--ps-navy);
         background-color: #FFFFFF;
         -webkit-font-smoothing: antialiased;
       }
-      .ps-header {
-        background-color: #0F172A;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', sans-serif;
+        letter-spacing: -0.02em;
       }
       .ps-badge {
-        background: #2563EB;
-        color: #FFFFFF;
+        background: #EFF6FF;
+        color: var(--ps-blue);
+        border: 1px solid #BFDBFE;
         font-size: 0.65rem;
         font-weight: 700;
-        padding: 2px 7px;
+        padding: 2px 8px;
         border-radius: 4px;
         letter-spacing: 0.5px;
-        vertical-align: middle;
-        margin-left: 6px;
+        margin-left: 8px;
+      }
+      .ps-btn-primary {
+        background-color: var(--ps-blue) !important;
+        color: #FFFFFF !important;
+        font-weight: 600;
+        border-radius: 6px;
+        transition: background-color 0.15s ease;
+      }
+      .ps-btn-primary:hover {
+        background-color: var(--ps-blue-hover) !important;
+      }
+      .ps-btn-outline {
+        border: 1px solid var(--ps-border) !important;
+        color: var(--ps-navy) !important;
+        background-color: #FFFFFF !important;
+        font-weight: 600;
+        border-radius: 6px;
+      }
+      .ps-btn-outline:hover {
+        background-color: var(--ps-light-bg) !important;
       }
     </style>
   </head>
   <body>
 
-    <!-- Enterprise Navigation Header -->
     {% include 'partials/navigation/header.html' %}
 
-    <!-- Dynamic Content Injector -->
     <main id="main">
       {{ content }}
     </main>
 
-    <!-- Enterprise Navigation Footer -->
     {% include 'partials/navigation/footer.html' %}
 
-    <!-- CloudCannon Live Registration -->
     <script>
       if (window.inEditorMode) {
         import("/register-components.js").catch((error) => {
