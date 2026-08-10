@@ -1,30 +1,24 @@
-<section class="w3-padding-64" style="--headingGradientColor: {{heading.heading_gradient_color}}; background-color: {{background_color | default: '#0F172A'}}; color: #FFFFFF; border-bottom: 1px solid rgba(255,255,255,0.08);">
-  <div class="w3-content" style="max-width:1200px; padding: 0 16px;">
+<section class="w3-padding-64" style="background-color: #FAFAFA; border-bottom: 1px solid #E2E8F0;">
+  <div class="w3-content" style="max-width:1200px; padding: 16px;">
     
-    <!-- Top Enterprise Tagline -->
-    <div class="w3-center w3-margin-bottom">
-      <span class="w3-small w3-text-blue" style="font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;">
-        Enterprise Mobile Surveying &amp; Compliance
-      </span>
-    </div>
-
-    <div class="w3-row-padding w3-flex-container" style="display: flex; align-items: center; flex-wrap: wrap;">
+    <div class="w3-row-padding" style="display: flex; align-items: center; flex-wrap: wrap;">
       
-      <!-- Left Column: Copy & Actions -->
+      <!-- Left Content Column -->
       <div class="w3-col l7 m12 s12 w3-margin-bottom">
         
-        <!-- Editable Heading -->
-        <h1 class="heading w3-xxlarge" style="font-weight: 800; line-height: 1.2; letter-spacing: -0.5px; margin-top: 0; color: #FFFFFF;" data-editable="text" data-type="span" data-prop="heading.heading_text">
+        <span class="w3-small" style="font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #2563EB; display: block; margin-bottom: 12px;">
+          Enterprise Mobile Surveying &amp; Asset Management
+        </span>
+
+        <h1 class="heading" style="font-weight: 800; font-size: 2.75rem; line-height: 1.15; color: #0F172A; margin-top: 0; margin-bottom: 16px;" data-editable="text" data-type="span" data-prop="heading.heading_text">
           {{heading.heading_text}}
         </h1>
         
-        <!-- Editable Subheading -->
-        <div class="subheading-text markdown-text w3-large w3-margin-top" style="color: {{subheading.color | default: '#94A3B8'}}; line-height: 1.6;" data-editable="text" data-type="block" data-prop="subheading.markdown_content">
+        <div class="subheading-text markdown-text" style="font-size: 1.125rem; line-height: 1.6; color: #475569; margin-bottom: 28px;" data-editable="text" data-type="block" data-prop="subheading.markdown_content">
           {% if subheading.markdown_content %}{{ subheading.markdown_content | renderMarkdown }}{% endif %}
         </div>
 
-        <!-- Editable Action Buttons -->
-        <div class="buttons w3-margin-top" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;" data-editable="array" data-prop="buttons" data-component-key="_type">
+        <div class="buttons" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;" data-editable="array" data-prop="buttons" data-component-key="_type">
           {% for button in buttons %}
             {% assign _buttonType = button._type %}
             <div data-editable="array-item" data-component="{{ button._type }}" data-id="{{ forloop.index0 }}">
@@ -33,33 +27,32 @@
           {% endfor %}
         </div>
 
-        <!-- Key Trust Indicators -->
-        <div class="w3-row w3-margin-top w3-padding-16 w3-border-top" style="border-color: rgba(255,255,255,0.08) !important; font-size: 0.85rem; color: #94A3B8;">
+        <!-- Trust Features -->
+        <div class="w3-row w3-margin-top w3-padding-16" style="border-top: 1px solid #E2E8F0; font-size: 0.875rem; color: #475569; font-weight: 500;">
           <div class="w3-third s12 w3-margin-bottom">
-            <i class="fa-solid fa-check w3-text-blue w3-margin-right"></i>Surveying Practices
+            <i class="fa-solid fa-circle-check w3-margin-right" style="color: #2563EB;"></i>Surveying Practices
           </div>
           <div class="w3-third s12 w3-margin-bottom">
-            <i class="fa-solid fa-check w3-text-blue w3-margin-right"></i>Housing Associations
+            <i class="fa-solid fa-circle-check w3-margin-right" style="color: #2563EB;"></i>Housing Associations
           </div>
           <div class="w3-third s12 w3-margin-bottom">
-            <i class="fa-solid fa-check w3-text-blue w3-margin-right"></i>Local Councils
+            <i class="fa-solid fa-circle-check w3-margin-right" style="color: #2563EB;"></i>Local Councils
           </div>
         </div>
 
       </div>
 
-      <!-- Right Column: Editable Media/Image -->
+      <!-- Right Media Column -->
       <div class="w3-col l5 m12 s12 w3-center w3-margin-bottom">
-        <div class="hero-image w3-card-4 w3-round-large" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 12px; overflow: hidden;">
+        <div class="hero-image w3-card w3-round-large" style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 16px; overflow: hidden;">
           {% if image.image_path %}
             <div data-editable="image" data-prop-src="image.image_path" data-prop-alt="image.alt_text">
               {% include "components/image", image_path: image.image_path, alt_text: image.alt_text, image_sizes: "(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px" %}
             </div>
           {% else %}
-            <!-- Placeholder preview image if no image path is set in CloudCannon -->
-            <div class="w3-padding-64 w3-text-gray">
-              <i class="fa-solid fa-laptop-code w3-jumbo w3-text-blue"></i>
-              <p class="w3-small w3-margin-top">Add an application dashboard preview image in CloudCannon sidebar</p>
+            <div class="w3-padding-64" style="color: #94A3B8;">
+              <i class="fa-solid fa-chart-line w3-jumbo" style="color: #2563EB;"></i>
+              <p class="w3-small w3-margin-top">Dashboard Preview</p>
             </div>
           {% endif %}
         </div>
