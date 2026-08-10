@@ -18,6 +18,7 @@ preview:
     - key: image.image_path
 value:
   _type: components/left-right
+  id_anchor: ''
   background_color: '#ffffff'
   heading:
     heading_text: Left right heading
@@ -39,6 +40,10 @@ value:
     hover_brightness: 0.85
     text_color: '#ffffff'
 _inputs:
+  id_anchor:
+    type: text
+    label: Anchor ID
+    comment: Section ID for smooth scrolling links (e.g. surveying-practices)
   heading:
     type: object
     options:
