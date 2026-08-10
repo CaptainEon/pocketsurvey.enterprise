@@ -1,5 +1,5 @@
 <!-- Top Compliance Bar -->
-<div class="w3-bar w3-small w3-hide-small" style="background-color: #F1F5F9; color: #475569; padding: 6px 0; border-bottom: 1px solid #E2E8F0;">
+<div class="w3-bar w3-small w3-hide-small" style="background-color: #F1F5F9; color: #475569; padding: 6px 0; border-bottom: 1px solid #E2E8F0; position: relative; z-index: 1001;">
   <div class="w3-content" style="max-width:1200px; padding: 0 16px;">
     <span class="w3-bar-item" style="padding: 0; font-weight: 500;">
       <i class="fa-solid fa-shield-halved w3-margin-right" style="color: #2563EB;"></i>UK Social Housing Compliance &bull; Decent Homes &amp; HHSRS Ready
@@ -12,9 +12,9 @@
   </div>
 </div>
 
-<!-- Main Clean Header -->
-<header class="w3-bar w3-white w3-padding-16" style="position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #E2E8F0;">
-  <div class="w3-content" style="max-width:1200px; padding: 0 16px;">
+<!-- Main Sticky SaaS Header -->
+<header class="w3-bar w3-white w3-padding-16" style="position: sticky; top: 0; z-index: 9999; border-bottom: 1px solid #E2E8F0; overflow: visible;">
+  <div class="w3-content" style="max-width:1200px; padding: 0 16px; overflow: visible;">
     
     <!-- Brand Logo -->
     <a href="/" class="w3-bar-item w3-button w3-hover-none" style="font-weight:800; font-size:1.25rem; padding: 4px 0; color: #0F172A;">
@@ -22,14 +22,14 @@
     </a>
 
     <!-- Primary Navigation -->
-    <div class="w3-right w3-hide-small" style="display: flex; align-items: center;">
+    <div class="w3-right w3-hide-small" style="display: flex; align-items: center; overflow: visible;">
       
       <!-- Who We Serve Dropdown -->
-      <div class="w3-dropdown-hover">
+      <div class="w3-dropdown-hover" style="position: relative; overflow: visible;">
         <button class="w3-button w3-hover-none" style="font-weight: 600; padding: 8px 16px; color: #0F172A;">
           Who We Serve <i class="fa-solid fa-chevron-down w3-small w3-margin-left" style="color: #64748B;"></i>
         </button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="width: 260px; background-color: #FFFFFF; color: #0F172A; margin-top: 8px; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 0;">
+        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="width: 260px; background-color: #FFFFFF; color: #0F172A; position: absolute; top: 100%; left: 0; z-index: 10000; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 0; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);">
           <a href="/sectors/surveying-practices/" class="w3-bar-item w3-button w3-hover-light-grey" style="padding: 10px 16px; font-weight: 500;">
             <i class="fa-solid fa-briefcase w3-margin-right" style="color: #2563EB;"></i>Surveying Practices
           </a>
