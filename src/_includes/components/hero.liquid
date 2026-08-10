@@ -6,45 +6,59 @@
       <!-- Left Content Column -->
       <div class="w3-col l7 m12 s12 w3-margin-bottom">
         
-        <span class="w3-small" style="font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #000000; display: block; margin-bottom: 12px;">
+        <span class="w3-small" style="font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #52525B; display: block; margin-bottom: 12px;">
           Enterprise Mobile Surveying &amp; Asset Management
         </span>
 
-        <h1 class="heading" style="font-weight: 800; font-size: 2.75rem; line-height: 1.15; color: #000000; margin-top: 0; margin-bottom: 16px;" data-editable="text" data-type="span" data-prop="heading.heading_text">
+        <h1 class="heading" style="font-weight: 800; font-size: 2.75rem; line-height: 1.15; color: #09090B; margin-top: 0; margin-bottom: 16px;" data-editable="text" data-type="span" data-prop="heading.heading_text">
           {{heading.heading_text}}
         </h1>
         
-        <div class="subheading-text markdown-text" style="font-size: 1.125rem; line-height: 1.6; color: #333333; margin-bottom: 28px;" data-editable="text" data-type="block" data-prop="subheading.markdown_content">
+        <div class="subheading-text markdown-text" style="font-size: 1.125rem; line-height: 1.6; color: #52525B; margin-bottom: 28px;" data-editable="text" data-type="block" data-prop="subheading.markdown_content">
           {% if subheading.markdown_content %}{{ subheading.markdown_content | renderMarkdown }}{% endif %}
         </div>
 
-        <div class="buttons" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;" data-editable="array" data-prop="buttons" data-component-key="_type">
-          {% for button in buttons %}
-            {% assign _buttonType = button._type %}
-            <div data-editable="array-item" data-component="{{ button._type }}" data-id="{{ forloop.index0 }}">
-              {% includeWith _buttonType, button %}
-            </div>
-          {% endfor %}
+        <!-- Action Buttons (Hardcoded Matching Style) -->
+        <div class="buttons" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-bottom: 32px;">
+          
+          <!-- Primary Google Blue CTA (Identical to Header) -->
+          <a href="/enquiry.htm" class="ps-header-cta" style="font-size: 0.95rem; padding: 10px 22px; display: inline-flex; align-items: center; text-decoration: none;">
+            Book Demo <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+          </a>
+
+          <!-- Secondary Find Out More CTA -->
+          <a href="/enquiry.htm" class="ps-hero-secondary-cta">
+            <i class="fa-solid fa-envelope" style="margin-right: 8px; color: #2563EB;"></i> Find Out More
+          </a>
+
         </div>
 
-        <!-- Trust Features (4 Colour-Coded Sectors) -->
-        <div class="w3-row w3-margin-top w3-padding-16" style="border-top: 1px solid #E4E4E7; font-size: 0.875rem; color: #111111; font-weight: 600; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <i class="fa-solid fa-briefcase" style="color: #10B981; font-size: 1rem;"></i>
+        <!-- Divider Line -->
+        <div style="height: 1px; background-color: #E4E4E7; margin-bottom: 24px; width: 100%;"></div>
+
+        <!-- Glassmorphic Sector Anchor Links -->
+        <div class="ps-hero-sectors-grid">
+          
+          <a href="#surveying-practices" class="ps-sector-pill" style="--pill-color: #10B981;">
+            <i class="fa-solid fa-briefcase" style="color: #10B981;"></i>
             <span>Surveying Practices</span>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <i class="fa-solid fa-building-user" style="color: #38BDF8; font-size: 1rem;"></i>
+          </a>
+
+          <a href="#housing-associations" class="ps-sector-pill" style="--pill-color: #38BDF8;">
+            <i class="fa-solid fa-building-user" style="color: #38BDF8;"></i>
             <span>Housing Associations</span>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <i class="fa-solid fa-landmark" style="color: #F59E0B; font-size: 1rem;"></i>
+          </a>
+
+          <a href="#local-councils" class="ps-sector-pill" style="--pill-color: #F59E0B;">
+            <i class="fa-solid fa-landmark" style="color: #F59E0B;"></i>
             <span>Local Councils</span>
-          </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <i class="fa-solid fa-screwdriver-wrench" style="color: #8B5CF6; font-size: 1rem;"></i>
+          </a>
+
+          <a href="#commercial-fm" class="ps-sector-pill" style="--pill-color: #8B5CF6;">
+            <i class="fa-solid fa-screwdriver-wrench" style="color: #8B5CF6;"></i>
             <span>Commercial &amp; FM</span>
-          </div>
+          </a>
+
         </div>
 
       </div>
