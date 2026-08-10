@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title | default: "PocketSurvey Enterprise | Mobile Surveying & Asset Management" }}</title>
 
-    <!-- Crisp Minimalist Typography -->
+    <!-- Minimalist Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- Utility & Framework CSS -->
+    <!-- Framework CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
@@ -35,21 +35,16 @@
         color: var(--ps-black);
         background-color: #FFFFFF;
         -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
       }
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Inter', sans-serif;
         letter-spacing: -0.02em;
         color: var(--ps-black);
       }
-      .ps-badge {
-        background: #000000;
-        color: #FFFFFF;
-        font-size: 0.65rem;
-        font-weight: 700;
-        padding: 3px 8px;
-        border-radius: 4px;
-        letter-spacing: 0.8px;
-      }
+
+      /* Primary Buttons */
       .ps-btn-primary {
         background-color: var(--ps-google-blue) !important;
         color: #FFFFFF !important;
@@ -71,31 +66,7 @@
         background-color: var(--ps-gray-light) !important;
       }
 
-      /* Header Custom Overrides */
-      .ps-top-link {
-        color: #A1A1AA !important;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.15s ease;
-      }
-      .ps-top-link:hover {
-        color: #FFFFFF !important;
-      }
-      .ps-nav-link {
-        color: #FFFFFF !important;
-        background: transparent !important;
-        border: none !important;
-        padding: 8px 16px !important;
-        font-size: 0.95rem !important;
-        font-weight: 600 !important;
-        text-decoration: none !important;
-        cursor: pointer;
-        border-radius: 6px;
-        transition: background-color 0.15s ease;
-      }
-      .ps-nav-link:hover {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-      }
+      /* Header CTA Button */
       .ps-header-cta {
         background-color: #1A73E8 !important;
         color: #FFFFFF !important;
@@ -112,18 +83,44 @@
         background-color: #1557B0 !important;
       }
 
-/* Clean High-Contrast Logo FX */
+      /* Platinum Glassmorphic Badge */
+      .ps-badge-platinum {
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: #F8FAFC;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        font-size: 0.65rem;
+        font-weight: 800;
+        padding: 4px 9px;
+        border-radius: 6px;
+        letter-spacing: 1.2px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        box-shadow: 
+          0 4px 12px rgba(0, 0, 0, 0.3),
+          inset 0 1px 1px rgba(255, 255, 255, 0.4);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .ps-badge-platinum:hover {
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 
+          0 4px 16px rgba(255, 255, 255, 0.15),
+          inset 0 1px 1px rgba(255, 255, 255, 0.6);
+      }
+
+      /* Logo Sizing & Smooth Hover Effect */
       .ps-logo-img {
         height: 48px;
         width: auto;
         display: block;
         filter: invert(1);
-        transition: transform 0.2s ease, opacity 0.2s ease;
+        transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       }
       .ps-logo-link:hover .ps-logo-img {
         transform: scale(1.05);
-        opacity: 0.9;
-      }
       }
     </style>
   </head>
