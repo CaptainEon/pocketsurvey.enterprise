@@ -99,7 +99,7 @@ content_blocks:
       color: '#0F172A'
     text:
       markdown_content: >-
-        Enforce standardized mobile auditing and asset monitoring for in-house municipal inspection teams.
+        Enforce standardised mobile auditing and asset monitoring for in-house municipal inspection teams.
 
 
         * **Municipal Portfolio Auditing:** Audit civic buildings, public estates, and educational facilities with rigid audit consistency.
