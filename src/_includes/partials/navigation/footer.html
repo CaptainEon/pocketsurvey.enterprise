@@ -1,26 +1,27 @@
-<footer style="background-color: #09090B; color: #A1A1AA; border-top: 1px solid #27272A; padding: 56px 0 36px 0; position: relative;">
+<!-- Footer Wrapper -->
+<footer style="background-color: #09090B; color: #A1A1AA; border-top: 1px solid #27272A; padding: 32px 0 24px 0; position: relative;">
   <div class="w3-content" style="max-width: 1200px; padding: 0 24px; margin: 0 auto;">
 
-    <!-- Device Compatibility Floating Glass Pill -->
-    <div style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 20px 28px; margin-bottom: 40px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);">
-      <div style="display: flex; align-items: center; gap: 14px;">
-        <i class="fa-solid fa-laptop-mobile" style="color: #38BDF8; font-size: 1.5rem;"></i>
-        <div>
-          <div style="color: #FFFFFF; font-weight: 700; font-size: 0.95rem;">Cross-Platform Inspection Engine</div>
-          <div style="color: #A1A1AA; font-size: 0.85rem;">Runs natively on iPad, iPhone, Android &amp; Web Browsers</div>
+    <!-- Sleek & Thinner Glassmorphic Cross-Platform Banner -->
+    <div style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 12px 20px; margin-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <i class="fa-solid fa-mobile-screen-button" style="color: #38BDF8; font-size: 1.25rem;"></i>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px;">
+          <span style="color: #FFFFFF; font-weight: 700; font-size: 0.9rem;">Cross-Platform Inspection Engine:</span>
+          <span style="color: #A1A1AA; font-size: 0.85rem;">Runs natively on iPad, iPhone, Android &amp; Web Browsers</span>
         </div>
       </div>
       
-      <!-- Sleek Floating Back to Top -->
-      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" aria-label="Scroll to top" class="ps-nav-link" style="padding: 8px 16px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px; color: #FFFFFF; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
-        Back to top <i class="fa-solid fa-arrow-up" style="font-size: 0.8rem; color: #38BDF8;"></i>
+      <!-- Compact Back to Top Pill -->
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" aria-label="Scroll to top" class="ps-nav-link" style="padding: 6px 14px; background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 8px; color: #FFFFFF; font-size: 0.82rem; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+        Back to top <i class="fa-solid fa-arrow-up" style="font-size: 0.75rem; color: #38BDF8;"></i>
       </button>
     </div>
 
-    <!-- Main Footer Bar -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 32px;">
+    <!-- Middle Row: Brand, Prominent Socials, Main Links -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 24px;">
       
-      <!-- PocketSurvey Brand & Copyright -->
+      <!-- Logo & Copyright -->
       <div style="display: flex; align-items: center; gap: 12px;">
         <a href="/" class="ps-logo-link" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
           <img src="/assets/images/logos/ps-cloud-logo-512.png?v=1.1" alt="PocketSurvey Logo" class="ps-logo-img" style="height: 36px; width: auto;" />
@@ -32,33 +33,28 @@
         </span>
       </div>
 
-      <!-- High-Gloss Glassmorphic Social Media Buttons -->
-      <div style="display: flex; gap: 10px; align-items: center;">
+      <!-- Prominent & Larger Glassmorphic Social Badges (YouTube, LinkedIn, Facebook) -->
+      <div style="display: flex; gap: 14px; align-items: center;">
         
-        <!-- YouTube Badge (Pops with YouTube Red Accent) -->
-        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="ps-nav-link" style="padding: 10px 14px; background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 10px; color: #EF4444 !important; transition: all 0.25s ease;">
-          <i class="fa-brands fa-youtube" style="font-size: 1.1rem; color: #EF4444;"></i>
+        <!-- YouTube Badge (Glows Red on Hover) -->
+        <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="ps-nav-link" style="padding: 12px 20px; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 10px; color: #EF4444 !important; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); display: inline-flex; align-items: center; justify-content: center;" onmouseover="this.style.boxShadow='0 0 16px rgba(239, 68, 68, 0.4)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+          <i class="fa-brands fa-youtube" style="font-size: 1.35rem; color: #EF4444;"></i>
         </a>
 
-        <!-- LinkedIn Badge -->
-        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="ps-nav-link" style="padding: 10px 14px; background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2); border-radius: 10px; color: #0EA5E9 !important; transition: all 0.25s ease;">
-          <i class="fa-brands fa-linkedin" style="font-size: 1.1rem; color: #0EA5E9;"></i>
+        <!-- LinkedIn Badge (Glows Sky Blue on Hover) -->
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="ps-nav-link" style="padding: 12px 20px; background: rgba(14, 165, 233, 0.1); border: 1px solid rgba(14, 165, 233, 0.3); border-radius: 10px; color: #0EA5E9 !important; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); display: inline-flex; align-items: center; justify-content: center;" onmouseover="this.style.boxShadow='0 0 16px rgba(14, 165, 233, 0.4)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+          <i class="fa-brands fa-linkedin" style="font-size: 1.35rem; color: #0EA5E9;"></i>
         </a>
 
-        <!-- Twitter/X Badge -->
-        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" class="ps-nav-link" style="padding: 10px 14px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 10px; color: #FFFFFF !important; transition: all 0.25s ease;">
-          <i class="fa-brands fa-x-twitter" style="font-size: 1.1rem; color: #FFFFFF;"></i>
-        </a>
-
-        <!-- Facebook Badge -->
-        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="ps-nav-link" style="padding: 10px 14px; background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 10px; color: #3B82F6 !important; transition: all 0.25s ease;">
-          <i class="fa-brands fa-facebook" style="font-size: 1.1rem; color: #3B82F6;"></i>
+        <!-- Facebook Badge (Glows Blue on Hover) -->
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="ps-nav-link" style="padding: 12px 20px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 10px; color: #3B82F6 !important; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); display: inline-flex; align-items: center; justify-content: center;" onmouseover="this.style.boxShadow='0 0 16px rgba(59, 130, 246, 0.4)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)';">
+          <i class="fa-brands fa-facebook" style="font-size: 1.35rem; color: #3B82F6;"></i>
         </a>
 
       </div>
 
-      <!-- Primary Core Nav Links -->
-      <div style="display: flex; gap: 20px; font-size: 0.88rem; font-weight: 600;">
+      <!-- Core Links -->
+      <div style="display: flex; gap: 20px; font-size: 0.9rem; font-weight: 600;">
         <a href="/reports/index.htm" style="color: #A1A1AA; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='#A1A1AA'">Reports</a>
         <a href="/demos/index.htm" style="color: #A1A1AA; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='#A1A1AA'">Videos</a>
         <a href="/pricing.htm" style="color: #A1A1AA; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='#A1A1AA'">Pricing</a>
@@ -67,12 +63,12 @@
     </div>
 
     <!-- Divider Line -->
-    <div style="height: 1px; background-color: #18181B; width: 100%; margin-bottom: 24px;"></div>
+    <div style="height: 1px; background-color: #18181B; width: 100%; margin-bottom: 20px;"></div>
 
     <!-- Bottom Legal Bar -->
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.82rem; color: #52525B;">
       <div>
-        PocketSurvey Enterprise Surveying Systems &bull; Built for UK Property Professionals
+        PocketSurvey Enterprise Surveying Systems &bull; Built for the Built Environment
       </div>
       <div style="display: flex; gap: 16px;">
         <a href="/privacy.htm" style="color: #71717A; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#A1A1AA'" onmouseout="this.style.color='#71717A'">Privacy Policy</a>
