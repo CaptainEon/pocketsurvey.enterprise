@@ -111,6 +111,19 @@
       .ps-header-cta:hover {
         background-color: #1557B0 !important;
       }
+
+      /* Logo Visual FX */
+      .ps-logo-img {
+        height: 52px;
+        width: auto;
+        display: block;
+        filter: invert(1) brightness(1.25) drop-shadow(0 0 12px rgba(255, 255, 255, 0.25));
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), filter 0.25s ease;
+      }
+      .ps-logo-link:hover .ps-logo-img {
+        transform: scale(1.05);
+        filter: invert(1) brightness(1.4) drop-shadow(0 0 18px rgba(255, 255, 255, 0.45));
+      }
     </style>
   </head>
   <body>
