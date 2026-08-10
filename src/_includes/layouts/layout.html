@@ -326,6 +326,48 @@ html {
     order: 1;
   }
 }
+      /* Responsive Left-Right Layout with Mobile Text-First Order */
+.ps-left-right-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+.ps-lr-content {
+  width: 100%;
+  order: 1; /* Text first on mobile */
+}
+
+.ps-lr-image {
+  width: 100%;
+  order: 2; /* Image second on mobile */
+}
+
+@media (min-width: 992px) {
+  .ps-left-right-wrapper {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .ps-lr-content, .ps-lr-image {
+    flex: 1;
+    width: 50%;
+  }
+
+  /* When flipped on desktop: Image Left (Order 1), Text Right (Order 2) */
+  .ps-left-right-wrapper.is-flipped .ps-lr-content {
+    order: 2;
+  }
+  .ps-left-right-wrapper.is-flipped .ps-lr-image {
+    order: 1;
+  }
+}
+
+/* Enable smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
     </style>
   </head>
   <body>
