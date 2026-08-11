@@ -16,27 +16,29 @@ eleventyExcludeFromCollections: false
 ---
 
 <section class="w3-padding-64" style="background-color: #FAFAFA; color: #18181B; border-bottom: 1px solid #E4E4E7; min-height: 80vh;">
-  <div class="w3-content" style="max-width: 540px; padding: 0 16px;">
+  <div class="w3-content" style="max-width: 520px; padding: 0 16px;">
+    
+    <!-- Minimal Header -->
     <div style="text-align: center; margin-bottom: 32px;">
       <span class="ps-badge-platinum" style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.8rem; padding: 6px 14px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 20px; display: inline-block; margin-bottom: 16px;">ENTERPRISE LICENSING</span>
       <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 800; color: #09090B; margin: 0 0 12px 0; letter-spacing: -0.02em;">Simple, All-Inclusive Enterprise Pricing</h1>
       <p style="font-size: 1rem; color: #52525B; max-width: 580px; margin: 0 auto; line-height: 1.5;">Select a plan tier below to rotate between options.</p>
     </div>
-    
-    <!-- Top Pill Controls -->
+
+    <!-- Top Pill Toggle -->
     <div style="display: flex; justify-content: center; margin-bottom: 32px;">
       <div style="background: #E4E4E7; padding: 4px; border-radius: 30px; display: inline-flex; gap: 4px;">
-        <button id="pill-enterprise" onclick="flipPricingCard('enterprise')" style="padding: 8px 24px; border-radius: 24px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: #2563EB; color: #FFFFFF; box-shadow: 0 2px 8px rgba(37,99,235,0.3); transition: all 0.25s ease;">Enterprise</button>
-        <button id="pill-custom" onclick="flipPricingCard('custom')" style="padding: 8px 24px; border-radius: 24px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #52525B; transition: all 0.25s ease;">Custom</button>
+        <button id="pill-enterprise" onclick="spinToTier('enterprise')" style="padding: 8px 24px; border-radius: 24px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: #2563EB; color: #FFFFFF; box-shadow: 0 2px 8px rgba(37,99,235,0.3); transition: all 0.25s ease;">Enterprise</button>
+        <button id="pill-custom" onclick="spinToTier('custom')" style="padding: 8px 24px; border-radius: 24px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #52525B; transition: all 0.25s ease;">Custom</button>
       </div>
     </div>
 
-    <!-- 3D Perspective Flip Container -->
-    <div style="perspective: 1200px; width: 100%; min-height: 520px;">
-      <div id="flip-card-inner" style="position: relative; width: 100%; height: 100%; transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1); transform-style: preserve-3d;">
+    <!-- 3D Perspective Spin Wrapper -->
+    <div style="perspective: 1000px; width: 100%;">
+      <div id="ps-spin-card" style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between; transform-style: preserve-3d;">
         
-        <!-- FRONT SIDE: Enterprise Card -->
-        <div style="position: absolute; width: 100%; backface-visibility: hidden; -webkit-backface-visibility: hidden; background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between;">
+        <!-- Enterprise Content View -->
+        <div id="view-enterprise" style="display: block;">
           <div>
             <div style="background: #2563EB; padding: 18px 16px; text-align: center; color: #FFFFFF;"><h2 style="font-size: 1.5rem; font-weight: 800; margin: 0; color: #FFFFFF; letter-spacing: -0.01em;">Enterprise</h2></div>
             <div style="text-align: center; padding: 20px 16px 16px 16px; border-bottom: 1px solid #F1F5F9;">
@@ -78,8 +80,8 @@ eleventyExcludeFromCollections: false
           </div>
         </div>
 
-        <!-- BACK SIDE: Custom Bespoke Card (Rotated 180deg) -->
-        <div style="position: absolute; width: 100%; backface-visibility: hidden; -webkit-backface-visibility: hidden; transform: rotateY(180deg); background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between;">
+        <!-- Custom Content View -->
+        <div id="view-custom" style="display: none;">
           <div>
             <div style="background: #0F172A; padding: 18px 16px; text-align: center; color: #FFFFFF;"><h2 style="font-size: 1.5rem; font-weight: 800; margin: 0; color: #FFFFFF; letter-spacing: -0.01em;">Custom</h2></div>
             <div style="text-align: center; padding: 20px 16px 16px 16px; border-bottom: 1px solid #F1F5F9;">
@@ -122,35 +124,65 @@ eleventyExcludeFromCollections: false
 
       </div>
     </div>
+
   </div>
 </section>
 
+<!-- Smooth Axis Spin Keyframes & Toggle Logic -->
+<style>
+  @keyframes psYAxisSpin {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(90deg); }
+    100% { transform: rotateY(0deg); }
+  }
+  .is-spinning {
+    animation: psYAxisSpin 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+</style>
+
 <script>
-  function flipPricingCard(type) {
-    var inner = document.getElementById('flip-card-inner');
+  var currentActiveTier = 'enterprise';
+
+  function spinToTier(targetTier) {
+    if (currentActiveTier === targetTier) return;
+    
+    var card = document.getElementById('ps-spin-card');
+    var viewEnt = document.getElementById('view-enterprise');
+    var viewCust = document.getElementById('view-custom');
     var pillEnt = document.getElementById('pill-enterprise');
     var pillCust = document.getElementById('pill-custom');
 
-    if (type === 'enterprise') {
-      inner.style.transform = 'rotateY(0deg)';
-      
-      pillEnt.style.background = '#2563EB';
-      pillEnt.style.color = '#FFFFFF';
-      pillEnt.style.boxShadow = '0 2px 8px rgba(37,99,235,0.3)';
+    // Trigger Y-Axis Spin Animation
+    card.classList.remove('is-spinning');
+    void card.offsetWidth; // Force Reflow
+    card.classList.add('is-spinning');
 
-      pillCust.style.background = 'transparent';
-      pillCust.style.color = '#52525B';
-      pillCust.style.boxShadow = 'none';
-    } else {
-      inner.style.transform = 'rotateY(180deg)';
+    // Swap content at the 90-degree mid-point (250ms)
+    setTimeout(function() {
+      if (targetTier === 'enterprise') {
+        viewEnt.style.display = 'block';
+        viewCust.style.display = 'none';
 
-      pillCust.style.background = '#0F172A';
-      pillCust.style.color = '#FFFFFF';
-      pillCust.style.boxShadow = '0 2px 8px rgba(15,23,42,0.3)';
+        pillEnt.style.background = '#2563EB';
+        pillEnt.style.color = '#FFFFFF';
+        pillEnt.style.boxShadow = '0 2px 8px rgba(37,99,235,0.3)';
 
-      pillEnt.style.background = 'transparent';
-      pillEnt.style.color = '#52525B';
-      pillEnt.style.boxShadow = 'none';
-    }
+        pillCust.style.background = 'transparent';
+        pillCust.style.color = '#52525B';
+        pillCust.style.boxShadow = 'none';
+      } else {
+        viewEnt.style.display = 'none';
+        viewCust.style.display = 'block';
+
+        pillCust.style.background = '#0F172A';
+        pillCust.style.color = '#FFFFFF';
+        pillCust.style.boxShadow = '0 2px 8px rgba(15,23,42,0.3)';
+
+        pillEnt.style.background = 'transparent';
+        pillEnt.style.color = '#52525B';
+        pillEnt.style.boxShadow = 'none';
+      }
+      currentActiveTier = targetTier;
+    }, 250);
   }
 </script>
