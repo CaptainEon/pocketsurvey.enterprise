@@ -16,124 +16,155 @@ eleventyExcludeFromCollections: false
 ---
 
 <section style="background-color: #FAFAFA; color: #18181B; padding: 64px 0 80px 0; border-bottom: 1px solid #E4E4E7; min-height: 80vh;">
-  <div style="max-width: 1100px; padding: 0 20px; margin: 0 auto;">
+  <div style="max-width: 1000px; padding: 0 24px; margin: 0 auto;">
 
     <!-- Minimal Header -->
-    <div style="text-align: center; margin-bottom: 40px;">
+    <div style="text-align: center; margin-bottom: 48px;">
       <span class="ps-badge-platinum" style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.8rem; padding: 6px 14px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 20px; display: inline-block; margin-bottom: 16px;">
         ENTERPRISE LICENSING
       </span>
       <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; color: #09090B; margin: 0 0 12px 0; letter-spacing: -0.02em;">
-        Simple, Transparent Enterprise Pricing
+        Simple, All-Inclusive Enterprise Pricing
       </h1>
-      <p style="font-size: 1.05rem; color: #52525B; max-width: 620px; margin: 0 auto; line-height: 1.6;">
-        Choose our standard all-inclusive enterprise plan or build a custom solution tailored to your organisation's exact schema.
+      <p style="font-size: 1.05rem; color: #52525B; max-width: 580px; margin: 0 auto; line-height: 1.6;">
+        Mobile surveying software with free training, ongoing support, and direct asset system data exports.
       </p>
     </div>
 
-    <!-- Glassmorphic Pricing Table -->
-    <div style="background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(228, 228, 231, 0.9); border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04); margin-bottom: 32px;">
+    <!-- 2 Modernised Enterprise Cards -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; align-items: stretch;">
       
-      <!-- Table Header (Pricing Tiers) -->
-      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; background: #09090B; color: #FFFFFF; padding: 24px 32px; align-items: center;">
+      <!-- Card 1: Enterprise -->
+      <div class="ps-card-classic" style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
         <div>
-          <div style="font-size: 1.2rem; font-weight: 800; color: #FFFFFF;">Features &amp; Modules</div>
-          <div style="font-size: 0.82rem; color: #A1A1AA; font-weight: 500;">Free setup, training &amp; ongoing technical support included</div>
-        </div>
-
-        <div style="text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.1); padding: 0 12px;">
-          <div style="color: #38BDF8; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Standard</div>
-          <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin: 2px 0;">£175</div>
-          <div style="font-size: 0.75rem; color: #A1A1AA;">/ user / month</div>
-        </div>
-
-        <div style="text-align: center; border-left: 1px solid rgba(255, 255, 255, 0.1); padding: 0 12px;">
-          <div style="color: #A78BFA; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Custom</div>
-          <div style="font-size: 1.8rem; font-weight: 800; color: #FFFFFF; margin: 2px 0;">Bespoke</div>
-          <div style="font-size: 0.75rem; color: #A1A1AA;">quote on request</div>
-        </div>
-      </div>
-
-      <!-- Interactive Glass Hover Rows -->
-      <div id="ps-pricing-rows">
-        
-        <!-- Row 1 -->
-        <div class="ps-glass-row">
-          <div class="ps-row-info">
-            <div class="ps-row-title">Housing Stock Condition Suite</div>
-            <div class="ps-row-sub">Decent Homes Standard, SHQS (Scotland), WHQS (Wales), HHSRS Damp &amp; Mould Audits</div>
+          <!-- Blue Top Header Banner -->
+          <div style="background: #2563EB; padding: 24px; text-align: center; color: #FFFFFF;">
+            <h2 style="font-size: 1.8rem; font-weight: 800; margin: 0; color: #FFFFFF; letter-spacing: -0.01em;">Enterprise</h2>
           </div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
-        </div>
 
-        <!-- Row 2 -->
-        <div class="ps-glass-row">
-          <div class="ps-row-info">
-            <div class="ps-row-title">Commercial Planned Maintenance Suite</div>
-            <div class="ps-row-sub">Standard RICS Schedules, SFG20 Maintenance Models, NHS 6-Facets Property Audits</div>
+          <!-- Price & Subheading -->
+          <div style="text-align: center; padding: 28px 24px 20px 24px; border-bottom: 1px solid #F1F5F9;">
+            <div style="font-size: 3rem; font-weight: 800; color: #09090B; line-height: 1; margin-bottom: 6px;">£175</div>
+            <div style="font-size: 0.95rem; font-weight: 700; color: #2563EB;">Price Per App</div>
+            <div style="font-size: 0.8rem; color: #71717A; margin-top: 2px;">per user / month</div>
           </div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
-        </div>
 
-        <!-- Row 3 -->
-        <div class="ps-glass-row">
-          <div class="ps-row-info">
-            <div class="ps-row-title">Direct Asset System CSV Exporters</div>
-            <div class="ps-row-sub">Pre-formatted exports mapped for NEC, Capita, Civica, Keystone, and MRI Asset Systems</div>
+          <!-- Middle Section: Available Apps -->
+          <div style="padding: 24px;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">
+              AVAILABLE APPS
+            </div>
+
+            <!-- App 1 -->
+            <div style="margin-bottom: 20px;">
+              <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <i class="fa-solid fa-check" style="color: #2563EB; font-size: 1.1rem; margin-top: 2px;"></i>
+                <div>
+                  <div style="font-weight: 700; color: #0F172A; font-size: 0.98rem;">Housing Stock Condition</div>
+                  <div style="font-size: 0.82rem; color: #64748B; margin-top: 2px;">(Optional Checklists: Decent Homes, SHQS, WHQS)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- App 2 -->
+            <div style="margin-bottom: 8px;">
+              <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <i class="fa-solid fa-check" style="color: #2563EB; font-size: 1.1rem; margin-top: 2px;"></i>
+                <div>
+                  <div style="font-weight: 700; color: #0F172A; font-size: 0.98rem;">Commercial Planned Maintenance</div>
+                  <div style="font-size: 0.82rem; color: #64748B; margin-top: 2px;">(Frameworks: Standard, BCIS, SFG20, 6 Facet)</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
-        </div>
 
-        <!-- Row 4 -->
-        <div class="ps-glass-row">
-          <div class="ps-row-info">
-            <div class="ps-row-title">Enterprise Database &amp; Desktop Portal</div>
-            <div class="ps-row-sub">Segmented user access, cloud image galleries, offline mobile app, and client PDF generation</div>
+          <!-- Highlighted Light Blue Bottom Section: Enterprise Features -->
+          <div style="background: #ECFEFF; border-top: 1px solid #CFFAFE; padding: 24px;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #0891B2; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px;">
+              ENTERPRISE FEATURES
+            </div>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; color: #155E75; display: flex; flex-direction: column; gap: 10px;">
+              <li><i class="fa-solid fa-star" style="color: #06B6D4; margin-right: 8px;"></i> Segmented Databases</li>
+              <li><i class="fa-solid fa-star" style="color: #06B6D4; margin-right: 8px;"></i> External Image Gallery</li>
+              <li><i class="fa-solid fa-star" style="color: #06B6D4; margin-right: 8px;"></i> Advanced Desktop Mode</li>
+              <li><i class="fa-solid fa-star" style="color: #06B6D4; margin-right: 8px;"></i> PDF Reports</li>
+              <li><i class="fa-solid fa-star" style="color: #06B6D4; margin-right: 8px;"></i> Direct CSV Export (NEC, Capita, Civica, MRI)</li>
+              <li><i class="fa-solid fa-star" style="color: #06B6D4; margin-right: 8px;"></i> Assisted Imports</li>
+            </ul>
           </div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check"></i></div>
         </div>
 
-        <!-- Row 5 -->
-        <div class="ps-glass-row">
-          <div class="ps-row-info">
-            <div class="ps-row-title">Custom Inspection Forms &amp; Scoring Logic</div>
-            <div class="ps-row-sub">Tailored inspection forms, custom defect scoring matrices, and conditional branching</div>
-          </div>
-          <div class="ps-cell-dash"><i class="fa-solid fa-minus"></i></div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check" style="color: #8B5CF6;"></i></div>
-        </div>
-
-        <!-- Row 6 -->
-        <div class="ps-glass-row">
-          <div class="ps-row-info">
-            <div class="ps-row-title">Proprietary Schema CSV / XML / JSON Exports</div>
-            <div class="ps-row-sub">Custom-coded exporters built to feed directly into your council's internal legacy systems</div>
-          </div>
-          <div class="ps-cell-dash"><i class="fa-solid fa-minus"></i></div>
-          <div class="ps-cell-check"><i class="fa-solid fa-circle-check" style="color: #8B5CF6;"></i></div>
-        </div>
-
-      </div>
-
-      <!-- Table Bottom CTA Bar -->
-      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; background: #F8FAFC; border-top: 1px solid #E2E8F0; padding: 20px 32px; align-items: center;">
-        <div style="font-weight: 600; color: #475569; font-size: 0.9rem;">
-          Ready to get started or need custom export samples?
-        </div>
-
-        <div style="text-align: center; padding: 0 8px;">
-          <a href="/enquiry.htm" class="ps-header-cta" style="margin: 0; padding: 10px 18px; font-size: 0.85rem; width: 100%; box-sizing: border-box; text-align: center; display: inline-block;">
-            Book Demo <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i>
+        <!-- Button -->
+        <div style="padding: 24px; background: #ECFEFF; border-top: 1px solid #CFFAFE;">
+          <a href="/enquiry.htm" class="ps-header-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.95rem; box-sizing: border-box; text-align: center; margin: 0;">
+            Book Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
           </a>
         </div>
+      </div>
 
-        <div style="text-align: center; padding: 0 8px;">
-          <a href="/enquiry.htm" class="ps-hero-secondary-cta" style="margin: 0; padding: 10px 18px; font-size: 0.85rem; width: 100%; box-sizing: border-box; text-align: center; display: inline-block; border-color: #CBD5E1; color: #09090B !important;">
-            Talk to Us <i class="fa-solid fa-comments" style="margin-left: 4px; color: #2563EB;"></i>
+      <!-- Card 2: Custom Bespoke -->
+      <div class="ps-card-classic" style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+        <div>
+          <!-- Dark Slate Header Banner -->
+          <div style="background: #0F172A; padding: 24px; text-align: center; color: #FFFFFF;">
+            <h2 style="font-size: 1.8rem; font-weight: 800; margin: 0; color: #FFFFFF; letter-spacing: -0.01em;">Custom</h2>
+          </div>
+
+          <!-- Price & Subheading -->
+          <div style="text-align: center; padding: 28px 24px 20px 24px; border-bottom: 1px solid #F1F5F9;">
+            <div style="font-size: 3rem; font-weight: 800; color: #09090B; line-height: 1; margin-bottom: 6px;">Quote</div>
+            <div style="font-size: 0.95rem; font-weight: 700; color: #38BDF8;">Custom Development</div>
+            <div style="font-size: 0.8rem; color: #71717A; margin-top: 2px;">tailored operational scope</div>
+          </div>
+
+          <!-- Middle Section: Custom Services -->
+          <div style="padding: 24px;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #0F172A; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">
+              BESPOKE SERVICES
+            </div>
+
+            <!-- Service 1 -->
+            <div style="margin-bottom: 20px;">
+              <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <i class="fa-solid fa-check" style="color: #0F172A; font-size: 1.1rem; margin-top: 2px;"></i>
+                <div>
+                  <div style="font-weight: 700; color: #0F172A; font-size: 0.98rem;">Tailored Mobile Inspection Forms</div>
+                  <div style="font-size: 0.82rem; color: #64748B; margin-top: 2px;">(Custom form logic, branching &amp; scoring matrices)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div style="margin-bottom: 8px;">
+              <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <i class="fa-solid fa-check" style="color: #0F172A; font-size: 1.1rem; margin-top: 2px;"></i>
+                <div>
+                  <div style="font-weight: 700; color: #0F172A; font-size: 0.98rem;">Proprietary Schema Exporters</div>
+                  <div style="font-size: 0.82rem; color: #64748B; margin-top: 2px;">(Custom CSV, XML, JSON built for legacy databases)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlighted Dark Section: Custom Features -->
+          <div style="background: #F8FAFC; border-top: 1px solid #E2E8F0; padding: 24px;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px;">
+              BESPOKE INCLUSIONS
+            </div>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; color: #334155; display: flex; flex-direction: column; gap: 10px;">
+              <li><i class="fa-solid fa-star" style="color: #38BDF8; margin-right: 8px;"></i> Custom Defect Scoring Logic</li>
+              <li><i class="fa-solid fa-star" style="color: #38BDF8; margin-right: 8px;"></i> Tailored Client PDF Templates</li>
+              <li><i class="fa-solid fa-star" style="color: #38BDF8; margin-right: 8px;"></i> Custom Database Schema Mapping</li>
+              <li><i class="fa-solid fa-star" style="color: #38BDF8; margin-right: 8px;"></i> Dedicated UK Development Lead</li>
+              <li><i class="fa-solid fa-star" style="color: #38BDF8; margin-right: 8px;"></i> Continuous Regulatory Updates</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div style="padding: 24px; background: #F8FAFC; border-top: 1px solid #E2E8F0;">
+          <a href="/enquiry.htm" class="ps-hero-secondary-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.95rem; box-sizing: border-box; text-align: center; margin: 0; border-color: #CBD5E1; color: #09090B !important;">
+            Talk to Us <i class="fa-solid fa-comments" style="margin-left: 6px; color: #2563EB;"></i>
           </a>
         </div>
       </div>
@@ -143,53 +174,10 @@ eleventyExcludeFromCollections: false
   </div>
 </section>
 
-<!-- Tactile Glassmorphic Row Lighting Styles -->
+<!-- Tactile Hover Effect -->
 <style>
-  .ps-glass-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding: 20px 32px;
-    align-items: center;
-    border-bottom: 1px solid #F1F5F9;
-    background: #FFFFFF;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    cursor: default;
-  }
-
-  .ps-row-title {
-    font-weight: 700;
-    color: #0F172A;
-    font-size: 0.98rem;
-  }
-
-  .ps-row-sub {
-    font-size: 0.82rem;
-    color: #64748B;
-    margin-top: 2px;
-  }
-
-  .ps-cell-check {
-    text-align: center;
-    color: #059669;
-    font-weight: 700;
-    font-size: 1.15rem;
-  }
-
-  .ps-cell-dash {
-    text-align: center;
-    color: #CBD5E1;
-    font-size: 0.9rem;
-  }
-
-  /* Glassmorphic Hover Lighting Effect */
-  .ps-glass-row:hover {
-    background: rgba(240, 249, 255, 0.85) !important;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    transform: translateY(-2px) scale(1.002);
-    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12), inset 0 0 0 1px rgba(37, 99, 235, 0.3);
-    z-index: 5;
-    border-radius: 8px;
+  .ps-card-classic:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08) !important;
   }
 </style>
