@@ -13,34 +13,24 @@ seo:
 layout: layouts/layout.html
 permalink: /pricing/
 eleventyExcludeFromCollections: false
+templateEngineOverride: njk, html
 ---
 
-{% raw %}
 <div style="background: radial-gradient(circle at 50% 0%, #F1F5F9 0%, #FAFAFA 70%); color: #0F172A; padding: 48px 16px 80px 16px; min-height: 80vh; box-sizing: border-box; width: 100%;">
   <div style="max-width: 960px; margin: 0 auto; width: 100%; box-sizing: border-box;">
     
     <!-- Header Section -->
     <div style="text-align: center; margin-bottom: 32px;">
-      <span style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.75rem; font-weight: 700; padding: 6px 16px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 30px; display: inline-block; margin-bottom: 12px; letter-spacing: 1px; text-transform: uppercase;">
-        ENTERPRISE LICENSING
-      </span>
-      <h1 style="font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 800; color: #09090B; margin: 0 0 8px 0; letter-spacing: -0.03em;">
-        Simple, All-Inclusive Pricing
-      </h1>
-      <p style="font-size: 1rem; color: #64748B; max-width: 540px; margin: 0 auto; line-height: 1.5;">
-        Select an enterprise tier below to toggle between standard compliance suites and custom app development.
-      </p>
+      <span style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.75rem; font-weight: 700; padding: 6px 16px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 30px; display: inline-block; margin-bottom: 12px; letter-spacing: 1px; text-transform: uppercase;">ENTERPRISE LICENSING</span>
+      <h1 style="font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 800; color: #09090B; margin: 0 0 8px 0; letter-spacing: -0.03em;">Simple, All-Inclusive Pricing</h1>
+      <p style="font-size: 1rem; color: #64748B; max-width: 540px; margin: 0 auto; line-height: 1.5;">Select an enterprise tier below to toggle between standard compliance suites and custom app development.</p>
     </div>
 
     <!-- High-End Pill Toggle -->
     <div style="display: flex; justify-content: center; margin-bottom: 40px;">
       <div style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 4px; border-radius: 40px; display: inline-flex; gap: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
-        <button id="pill-enterprise" onclick="orbitToTier('enterprise')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: #2563EB; color: #FFFFFF; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: all 0.3s ease;">
-          Enterprise Standard
-        </button>
-        <button id="pill-custom" onclick="orbitToTier('custom')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #64748B; transition: all 0.3s ease;">
-          Custom Bespoke
-        </button>
+        <button id="pill-enterprise" onclick="orbitToTier('enterprise')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: #2563EB; color: #FFFFFF; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: all 0.3s ease;">Enterprise Standard</button>
+        <button id="pill-custom" onclick="orbitToTier('custom')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #64748B; transition: all 0.3s ease;">Custom Bespoke</button>
       </div>
     </div>
 
@@ -60,7 +50,6 @@ eleventyExcludeFromCollections: false
             </div>
             <div style="font-size: 0.78rem; color: #059669; font-weight: 600; margin-top: 4px;"><i class="fa-solid fa-circle-check" style="margin-right: 4px;"></i> Free Setup, Onboarding &amp; Support</div>
           </div>
-
           <div style="padding: 20px 24px; background: #FFFFFF;">
             <div style="font-size: 0.72rem; font-weight: 700; color: #0F172A; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;">Included Frameworks &amp; Apps:</div>
             <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">
@@ -79,7 +68,6 @@ eleventyExcludeFromCollections: false
                 </div>
               </div>
             </div>
-
             <div style="background: rgba(236, 254, 255, 0.7); border: 1px solid #CFFAFE; border-radius: 12px; padding: 14px;">
               <div style="font-size: 0.7rem; font-weight: 700; color: #0891B2; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Enterprise Platform Features:</div>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 0.78rem; color: #155E75; font-weight: 500;">
@@ -93,11 +81,8 @@ eleventyExcludeFromCollections: false
             </div>
           </div>
         </div>
-
         <div style="padding: 18px 24px; background: #F8FAFC; border-top: 1px solid #E2E8F0; text-align: center;">
-          <a href="/enquiry.htm" class="ps-header-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
-            Book Enterprise Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
-          </a>
+          <a href="/enquiry.htm" class="ps-header-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">Book Enterprise Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
         </div>
       </div>
 
@@ -113,7 +98,6 @@ eleventyExcludeFromCollections: false
             </div>
             <div style="font-size: 0.78rem; color: #64748B; font-weight: 500; margin-top: 4px;">Tailored quote based on operational scope</div>
           </div>
-
           <div style="padding: 20px 24px; background: #FFFFFF;">
             <div style="font-size: 0.72rem; font-weight: 700; color: #0F172A; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px;">Bespoke Engineering Capabilities:</div>
             <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">
@@ -132,7 +116,6 @@ eleventyExcludeFromCollections: false
                 </div>
               </div>
             </div>
-
             <div style="background: rgba(243, 232, 255, 0.7); border: 1px solid #E9D5FF; border-radius: 12px; padding: 14px;">
               <div style="font-size: 0.7rem; font-weight: 700; color: #6B21A8; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">All Enterprise Features, Plus:</div>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 0.78rem; color: #581C87; font-weight: 500;">
@@ -146,11 +129,8 @@ eleventyExcludeFromCollections: false
             </div>
           </div>
         </div>
-
         <div style="padding: 18px 24px; background: #F8FAFC; border-top: 1px solid #E2E8F0; text-align: center;">
-          <a href="/enquiry.htm" class="ps-hero-secondary-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; border-color: #CBD5E1; color: #09090B !important;">
-            Discuss Custom App <i class="fa-solid fa-comments" style="margin-left: 6px; color: #2563EB;"></i>
-          </a>
+          <a href="/enquiry.htm" class="ps-hero-secondary-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; border-color: #CBD5E1; color: #09090B !important;">Discuss Custom App <i class="fa-solid fa-comments" style="margin-left: 6px; color: #2563EB;"></i></a>
         </div>
       </div>
 
@@ -158,9 +138,7 @@ eleventyExcludeFromCollections: false
 
     <!-- Supported Systems Integration Footer Badges -->
     <div style="border-top: 1px solid #E2E8F0; padding-top: 28px; text-align: center;">
-      <span style="font-size: 0.78rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 14px;">
-        Direct Automated Data Exporters Included
-      </span>
+      <span style="font-size: 0.78rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 14px;">Direct Automated Data Exporters Included</span>
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; font-weight: 700; font-size: 0.85rem; color: #0F172A;">
         <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 14px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">NEC Software</span>
         <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 14px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">Capita Housing</span>
@@ -229,4 +207,3 @@ eleventyExcludeFromCollections: false
     currentTier = targetTier;
   }
 </script>
-{% endraw %}
