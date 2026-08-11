@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: false
 <section style="background-color: #FAFAFA; color: #18181B; padding: 64px 0 80px 0; border-bottom: 1px solid #E4E4E7; min-height: 80vh;">
   <div style="max-width: 1000px; padding: 0 24px; margin: 0 auto;">
 
-    <!-- Minimal Header -->
+    <!-- Header -->
     <div style="text-align: center; margin-bottom: 48px;">
       <span class="ps-badge-platinum" style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.8rem; padding: 6px 14px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 20px; display: inline-block; margin-bottom: 16px;">
         ENTERPRISE LICENSING
@@ -31,7 +31,7 @@ eleventyExcludeFromCollections: false
       </p>
     </div>
 
-    <!-- 2 Modernised Enterprise Cards -->
+    <!-- 2 Interactive Side-by-Side Cards -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; align-items: stretch;">
       
       <!-- Card 1: Enterprise -->
@@ -42,14 +42,14 @@ eleventyExcludeFromCollections: false
             <h2 style="font-size: 1.8rem; font-weight: 800; margin: 0; color: #FFFFFF; letter-spacing: -0.01em;">Enterprise</h2>
           </div>
 
-          <!-- Price & Subheading -->
+          <!-- Price Header -->
           <div style="text-align: center; padding: 28px 24px 20px 24px; border-bottom: 1px solid #F1F5F9;">
             <div style="font-size: 3rem; font-weight: 800; color: #09090B; line-height: 1; margin-bottom: 6px;">£175</div>
             <div style="font-size: 0.95rem; font-weight: 700; color: #2563EB;">Price Per App</div>
             <div style="font-size: 0.8rem; color: #71717A; margin-top: 2px;">per user / month</div>
           </div>
 
-          <!-- Middle Section: Available Apps -->
+          <!-- Middle Body: Available Apps -->
           <div style="padding: 24px;">
             <div style="font-size: 0.75rem; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">
               AVAILABLE APPS
@@ -78,7 +78,7 @@ eleventyExcludeFromCollections: false
             </div>
           </div>
 
-          <!-- Highlighted Light Blue Bottom Section: Enterprise Features -->
+          <!-- Highlighted Light Blue Enterprise Features Box -->
           <div style="background: #ECFEFF; border-top: 1px solid #CFFAFE; padding: 24px;">
             <div style="font-size: 0.75rem; font-weight: 700; color: #0891B2; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px;">
               ENTERPRISE FEATURES
@@ -94,7 +94,7 @@ eleventyExcludeFromCollections: false
           </div>
         </div>
 
-        <!-- Button -->
+        <!-- Action Button -->
         <div style="padding: 24px; background: #ECFEFF; border-top: 1px solid #CFFAFE;">
           <a href="/enquiry.htm" class="ps-header-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.95rem; box-sizing: border-box; text-align: center; margin: 0;">
             Book Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
@@ -105,19 +105,19 @@ eleventyExcludeFromCollections: false
       <!-- Card 2: Custom Bespoke -->
       <div class="ps-card-classic" style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
         <div>
-          <!-- Dark Slate Header Banner -->
+          <!-- Dark Header Banner -->
           <div style="background: #0F172A; padding: 24px; text-align: center; color: #FFFFFF;">
             <h2 style="font-size: 1.8rem; font-weight: 800; margin: 0; color: #FFFFFF; letter-spacing: -0.01em;">Custom</h2>
           </div>
 
-          <!-- Price & Subheading -->
+          <!-- Price Header -->
           <div style="text-align: center; padding: 28px 24px 20px 24px; border-bottom: 1px solid #F1F5F9;">
             <div style="font-size: 3rem; font-weight: 800; color: #09090B; line-height: 1; margin-bottom: 6px;">Quote</div>
             <div style="font-size: 0.95rem; font-weight: 700; color: #38BDF8;">Custom Development</div>
             <div style="font-size: 0.8rem; color: #71717A; margin-top: 2px;">tailored operational scope</div>
           </div>
 
-          <!-- Middle Section: Custom Services -->
+          <!-- Middle Body: Bespoke Services -->
           <div style="padding: 24px;">
             <div style="font-size: 0.75rem; font-weight: 700; color: #0F172A; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">
               BESPOKE SERVICES
@@ -146,7 +146,7 @@ eleventyExcludeFromCollections: false
             </div>
           </div>
 
-          <!-- Highlighted Dark Section: Custom Features -->
+          <!-- Highlighted Custom Inclusions Box -->
           <div style="background: #F8FAFC; border-top: 1px solid #E2E8F0; padding: 24px;">
             <div style="font-size: 0.75rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 14px;">
               BESPOKE INCLUSIONS
@@ -161,7 +161,7 @@ eleventyExcludeFromCollections: false
           </div>
         </div>
 
-        <!-- Button -->
+        <!-- Action Button -->
         <div style="padding: 24px; background: #F8FAFC; border-top: 1px solid #E2E8F0;">
           <a href="/enquiry.htm" class="ps-hero-secondary-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.95rem; box-sizing: border-box; text-align: center; margin: 0; border-color: #CBD5E1; color: #09090B !important;">
             Talk to Us <i class="fa-solid fa-comments" style="margin-left: 6px; color: #2563EB;"></i>
@@ -174,7 +174,7 @@ eleventyExcludeFromCollections: false
   </div>
 </section>
 
-<!-- Tactile Hover Effect -->
+<!-- Tactile Hover Lift -->
 <style>
   .ps-card-classic:hover {
     transform: translateY(-6px);
