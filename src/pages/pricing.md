@@ -16,9 +16,9 @@ eleventyExcludeFromCollections: false
 ---
 
 <section style="background-color: #FAFAFA; color: #18181B; padding: 64px 0 80px 0; border-bottom: 1px solid #E4E4E7; min-height: 80vh;">
-  <div style="max-width: 1000px; padding: 0 24px; margin: 0 auto;">
+  <div style="max-width: 1100px; padding: 0 24px; margin: 0 auto;">
 
-    <!-- Header -->
+    <!-- Hero Header -->
     <div style="text-align: center; margin-bottom: 48px;">
       <span class="ps-badge-platinum" style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.8rem; padding: 6px 14px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 20px; display: inline-block; margin-bottom: 16px;">
         ENTERPRISE LICENSING
@@ -31,8 +31,8 @@ eleventyExcludeFromCollections: false
       </p>
     </div>
 
-    <!-- 2 Interactive Side-by-Side Cards -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; align-items: stretch;">
+    <!-- Forced 2-Column Side-by-Side Grid -->
+    <div class="ps-pricing-grid">
       
       <!-- Card 1: Enterprise -->
       <div class="ps-card-classic" style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
@@ -174,10 +174,25 @@ eleventyExcludeFromCollections: false
   </div>
 </section>
 
-<!-- Tactile Hover Lift -->
+<!-- Strict 2-Column Responsive CSS -->
 <style>
+  .ps-pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+  }
+
   .ps-card-classic:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08) !important;
+  }
+
+  /* Responsive Fallback for Mobile Screens */
+  @media (max-width: 768px) {
+    .ps-pricing-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
   }
 </style>
