@@ -16,86 +16,8 @@ eleventyExcludeFromCollections: false
 ---
 
 {% raw %}
-<style>
-  /* Base Container Layout */
-  .ps-pricing-wrapper {
-    background: radial-gradient(circle at 50% 0%, #F1F5F9 0%, #FAFAFA 70%);
-    color: #0F172A;
-    padding: 48px 16px 80px 16px;
-    min-height: 80vh;
-    box-sizing: border-box;
-  }
-  .ps-pricing-container {
-    max-width: 920px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  /* Flex Cards Layout Stage */
-  .ps-cards-stage {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 24px;
-    margin-bottom: 48px;
-  }
-
-  /* Individual Card Styling */
-  .ps-pricing-card {
-    flex: 1 1 400px;
-    max-width: 440px;
-    background: #FFFFFF;
-    border-radius: 20px;
-    overflow: hidden;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  /* Active vs Inactive Card States */
-  .ps-pricing-card.is-active {
-    transform: scale(1.03);
-    opacity: 1;
-    filter: grayscale(0%);
-    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
-    z-index: 2;
-  }
-  .ps-pricing-card.is-inactive {
-    transform: scale(0.94);
-    opacity: 0.5;
-    filter: grayscale(70%);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-    z-index: 1;
-  }
-  .ps-pricing-card.is-inactive:hover {
-    opacity: 0.8;
-    filter: grayscale(20%);
-  }
-
-  /* Mobile Responsive Adjustment */
-  @media (max-width: 768px) {
-    .ps-cards-stage {
-      flex-direction: column;
-      align-items: center;
-    }
-    .ps-pricing-card {
-      width: 100%;
-      max-width: 100%;
-    }
-    .ps-pricing-card.is-active,
-    .ps-pricing-card.is-inactive {
-      transform: none;
-      opacity: 1;
-      filter: none;
-    }
-  }
-</style>
-
-<div class="ps-pricing-wrapper">
-  <div class="ps-pricing-container">
+<div style="background: radial-gradient(circle at 50% 0%, #F1F5F9 0%, #FAFAFA 70%); color: #0F172A; padding: 48px 16px 80px 16px; min-height: 80vh; box-sizing: border-box; width: 100%;">
+  <div style="max-width: 960px; margin: 0 auto; width: 100%; box-sizing: border-box;">
     
     <!-- Header Section -->
     <div style="text-align: center; margin-bottom: 32px;">
@@ -122,11 +44,11 @@ eleventyExcludeFromCollections: false
       </div>
     </div>
 
-    <!-- Pricing Cards Stage -->
-    <div class="ps-cards-stage">
+    <!-- Strictly Forced Side-by-Side Flex Stage -->
+    <div style="display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; justify-content: center !important; align-items: stretch !important; gap: 24px !important; width: 100% !important; margin-bottom: 48px !important; box-sizing: border-box !important;">
       
       <!-- CARD 1: ENTERPRISE -->
-      <div id="card-enterprise" onclick="orbitToTier('enterprise')" class="ps-pricing-card is-active" style="border: 2px solid #2563EB;">
+      <div id="card-enterprise" onclick="orbitToTier('enterprise')" style="width: 48% !important; max-width: 450px !important; flex: 0 0 48% !important; background: #FFFFFF; border: 2px solid #2563EB; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12); box-sizing: border-box !important; cursor: pointer; transition: all 0.4s ease; transform: scale(1.02); opacity: 1; filter: grayscale(0%); display: flex; flex-direction: column; justify-content: space-between;">
         <div>
           <div style="height: 5px; background: linear-gradient(90deg, #2563EB, #38BDF8);"></div>
           <div style="padding: 24px 28px 18px 28px; text-align: center; border-bottom: 1px solid #F1F5F9; position: relative; background: #FFFFFF;">
@@ -180,7 +102,7 @@ eleventyExcludeFromCollections: false
       </div>
 
       <!-- CARD 2: CUSTOM -->
-      <div id="card-custom" onclick="orbitToTier('custom')" class="ps-pricing-card is-inactive" style="border: 1px solid #E2E8F0;">
+      <div id="card-custom" onclick="orbitToTier('custom')" style="width: 48% !important; max-width: 450px !important; flex: 0 0 48% !important; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.04); box-sizing: border-box !important; cursor: pointer; transition: all 0.4s ease; transform: scale(0.93); opacity: 0.5; filter: grayscale(70%); display: flex; flex-direction: column; justify-content: space-between;">
         <div>
           <div style="height: 5px; background: linear-gradient(90deg, #38BDF8, #8B5CF6);"></div>
           <div style="padding: 24px 28px 18px 28px; text-align: center; border-bottom: 1px solid #F1F5F9; position: relative; background: #FFFFFF;">
@@ -263,11 +185,17 @@ eleventyExcludeFromCollections: false
     var pillCust = document.getElementById('pill-custom');
 
     if (targetTier === 'enterprise') {
-      cardEnt.className = 'ps-pricing-card is-active';
-      cardCust.className = 'ps-pricing-card is-inactive';
-
+      cardEnt.style.transform = 'scale(1.02)';
+      cardEnt.style.opacity = '1';
+      cardEnt.style.filter = 'grayscale(0%)';
       cardEnt.style.borderColor = '#2563EB';
+      cardEnt.style.boxShadow = '0 20px 40px rgba(37, 99, 235, 0.12)';
+
+      cardCust.style.transform = 'scale(0.93)';
+      cardCust.style.opacity = '0.5';
+      cardCust.style.filter = 'grayscale(70%)';
       cardCust.style.borderColor = '#E2E8F0';
+      cardCust.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.04)';
 
       pillEnt.style.background = '#2563EB';
       pillEnt.style.color = '#FFFFFF';
@@ -277,11 +205,17 @@ eleventyExcludeFromCollections: false
       pillCust.style.color = '#64748B';
       pillCust.style.boxShadow = 'none';
     } else {
-      cardCust.className = 'ps-pricing-card is-active';
-      cardEnt.className = 'ps-pricing-card is-inactive';
-
+      cardCust.style.transform = 'scale(1.02)';
+      cardCust.style.opacity = '1';
+      cardCust.style.filter = 'grayscale(0%)';
       cardCust.style.borderColor = '#0F172A';
+      cardCust.style.boxShadow = '0 20px 40px rgba(15, 23, 42, 0.12)';
+
+      cardEnt.style.transform = 'scale(0.93)';
+      cardEnt.style.opacity = '0.5';
+      cardEnt.style.filter = 'grayscale(70%)';
       cardEnt.style.borderColor = '#E2E8F0';
+      cardEnt.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.04)';
 
       pillCust.style.background = '#0F172A';
       pillCust.style.color = '#FFFFFF';
