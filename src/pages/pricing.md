@@ -30,7 +30,7 @@ templateEngineOverride: njk, html
     <div style="display: flex; justify-content: center; margin-bottom: 40px;">
       <div style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 4px; border-radius: 40px; display: inline-flex; gap: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
         <button id="pill-enterprise" onclick="orbitToTier('enterprise')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: #2563EB; color: #FFFFFF; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: all 0.3s ease;">Enterprise Standard</button>
-        <button id="pill-custom" onclick="orbitToTier('custom')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #64748B; transition: all 0.3s ease;">Custom App</button>
+        <button id="pill-custom" onclick="orbitToTier('custom')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #64748B; transition: all 0.3s ease;">Custom Projects</button>
       </div>
     </div>
 
@@ -86,13 +86,13 @@ templateEngineOverride: njk, html
         </div>
       </div>
 
-      <!-- CARD 2: CUSTOM -->
+      <!-- CARD 2: CUSTOM PROJECTS -->
       <div id="card-custom" onclick="orbitToTier('custom')" style="width: 48% !important; max-width: 450px !important; flex: 0 0 48% !important; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.04); box-sizing: border-box !important; cursor: pointer; transition: all 0.4s ease; transform: scale(0.93); opacity: 0.5; filter: grayscale(70%); display: flex; flex-direction: column; justify-content: space-between;">
         <div>
           <div style="height: 5px; background: linear-gradient(90deg, #38BDF8, #8B5CF6);"></div>
           <div style="padding: 24px 28px 18px 28px; text-align: center; border-bottom: 1px solid #F1F5F9; position: relative; background: #FFFFFF;">
             <span style="position: absolute; top: 16px; right: 20px; background: #F3E8FF; color: #7C3AED; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(124,58,237,0.2);">Tailored Scope</span>
-            <div style="color: #7C3AED; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Custom Studio Plan</div>
+            <div style="color: #7C3AED; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px;">Custom Projects</div>
             <div style="display: flex; align-items: baseline; justify-content: center; gap: 6px; margin-bottom: 2px;">
               <span style="font-size: 3rem; font-weight: 800; color: #0F172A; letter-spacing: -0.03em; line-height: 1;">Custom</span>
             </div>
