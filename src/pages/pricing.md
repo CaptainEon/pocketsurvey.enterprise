@@ -16,11 +16,11 @@ eleventyExcludeFromCollections: false
 ---
 
 {% raw %}
-<div style="background: radial-gradient(circle at 50% 0%, #F1F5F9 0%, #FAFAFA 70%); color: #0F172A; padding: 40px 16px 80px 16px; min-height: 85vh; box-sizing: border-box; overflow: hidden;">
+<div style="background: radial-gradient(circle at 50% 0%, #F1F5F9 0%, #FAFAFA 70%); color: #0F172A; padding: 48px 16px 80px 16px; min-height: 80vh; box-sizing: border-box; overflow: hidden;">
   <div style="max-width: 900px; margin: 0 auto; width: 100%;">
     
-    <!-- Minimalist Header -->
-    <div style="text-align: center; margin-bottom: 28px;">
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 32px;">
       <span style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.75rem; font-weight: 700; padding: 6px 16px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 30px; display: inline-block; margin-bottom: 12px; letter-spacing: 1px; text-transform: uppercase;">
         ENTERPRISE LICENSING
       </span>
@@ -28,27 +28,27 @@ eleventyExcludeFromCollections: false
         Simple, All-Inclusive Pricing
       </h1>
       <p style="font-size: 1rem; color: #64748B; max-width: 540px; margin: 0 auto; line-height: 1.5;">
-        Select an enterprise tier below to orbit between standard compliance suites and custom app development.
+        Select an enterprise tier below to toggle between standard compliance suites and custom app development.
       </p>
     </div>
 
     <!-- High-End Pill Toggle -->
-    <div style="display: flex; justify-content: center; margin-bottom: 36px;">
+    <div style="display: flex; justify-content: center; margin-bottom: 40px;">
       <div style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 4px; border-radius: 40px; display: inline-flex; gap: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
-        <button id="pill-enterprise" onclick="orbitToTier('enterprise')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: #2563EB; color: #FFFFFF; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+        <button id="pill-enterprise" onclick="orbitToTier('enterprise')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: #2563EB; color: #FFFFFF; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: all 0.3s ease;">
           Enterprise Standard
         </button>
-        <button id="pill-custom" onclick="orbitToTier('custom')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #64748B; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+        <button id="pill-custom" onclick="orbitToTier('custom')" style="padding: 10px 28px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.88rem; cursor: pointer; background: transparent; color: #64748B; transition: all 0.3s ease;">
           Custom Bespoke
         </button>
       </div>
     </div>
 
-    <!-- 3D Orbital Perspective Stage -->
-    <div style="perspective: 1200px; width: 100%; position: relative; height: 560px; max-width: 520px; margin: 0 auto 40px auto; overflow: visible;">
+    <!-- Cards Flex Stage -->
+    <div style="display: flex; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 48px; min-height: 540px;">
       
-      <!-- CARD 1: ENTERPRISE (Starts Front & Active) -->
-      <div id="card-enterprise" onclick="orbitToTier('enterprise')" class="ps-3d-card is-front-earth" style="position: absolute; top: 0; left: 0; width: 100%; background: #FFFFFF; border: 2px solid #2563EB; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15); box-sizing: border-box; cursor: pointer; transition: all 0.75s cubic-bezier(0.34, 1.25, 0.64, 1);">
+      <!-- CARD 1: ENTERPRISE -->
+      <div id="card-enterprise" onclick="orbitToTier('enterprise')" class="ps-card-stage ps-active-card" style="flex: 1 1 380px; max-width: 440px; background: #FFFFFF; border: 2px solid #2563EB; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15); box-sizing: border-box; cursor: pointer; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
         <div style="height: 5px; background: linear-gradient(90deg, #2563EB, #38BDF8);"></div>
         <div style="padding: 24px 28px 18px 28px; text-align: center; border-bottom: 1px solid #F1F5F9; position: relative; background: #FFFFFF;">
           <span style="position: absolute; top: 16px; right: 20px; background: #EFF6FF; color: #2563EB; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(37,99,235,0.2);">Most Popular</span>
@@ -99,8 +99,8 @@ eleventyExcludeFromCollections: false
         </div>
       </div>
 
-      <!-- CARD 2: CUSTOM (Starts Back & Inactive/Greyed) -->
-      <div id="card-custom" onclick="orbitToTier('custom')" class="ps-3d-card is-back-moon" style="position: absolute; top: 0; left: 0; width: 100%; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); box-sizing: border-box; cursor: pointer; transition: all 0.75s cubic-bezier(0.34, 1.25, 0.64, 1);">
+      <!-- CARD 2: CUSTOM -->
+      <div id="card-custom" onclick="orbitToTier('custom')" class="ps-card-stage ps-inactive-card" style="flex: 1 1 380px; max-width: 440px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); box-sizing: border-box; cursor: pointer; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
         <div style="height: 5px; background: linear-gradient(90deg, #38BDF8, #8B5CF6);"></div>
         <div style="padding: 24px 28px 18px 28px; text-align: center; border-bottom: 1px solid #F1F5F9; position: relative; background: #FFFFFF;">
           <span style="position: absolute; top: 16px; right: 20px; background: #F3E8FF; color: #7C3AED; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(124,58,237,0.2);">Tailored Scope</span>
@@ -152,7 +152,7 @@ eleventyExcludeFromCollections: false
 
     </div>
 
-    <!-- Supported Systems Integration Badges Footer -->
+    <!-- Footer Integrations -->
     <div style="border-top: 1px solid #E2E8F0; padding-top: 28px; text-align: center;">
       <span style="font-size: 0.78rem; font-weight: 700; color: #64748B; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 14px;">
         Direct Automated Data Exporters Included
@@ -162,57 +162,31 @@ eleventyExcludeFromCollections: false
         <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 14px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">Capita Housing</span>
         <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 14px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">Civica Horizon</span>
         <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 14px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">Keystone</span>
-        <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 14px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">MRI Software</span>
+        <span style="background: #FFFFFF; border: 1px solid #E4E4E7; padding: 6px 14px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">MRI Software</span>
       </div>
     </div>
 
   </div>
 </div>
 
-<!-- Orbital Trajectory Animations & Transforms -->
 <style>
-  /* FRONT/EARTH POSITION: Centered, Focused & Full Color */
-  .is-front-earth {
-    transform: translate3d(0, 0, 40px) scale(1) rotateY(0deg) !important;
-    z-index: 10 !important;
+  /* ACTIVE CARD STATE */
+  .ps-active-card {
+    transform: scale(1.02);
     opacity: 1 !important;
-    filter: grayscale(0%) blur(0px) !important;
-    pointer-events: auto !important;
+    filter: grayscale(0%);
   }
 
-  /* BACK/MOON POSITION: Offset right, scaled down & greyed out */
-  .is-back-moon {
-    transform: translate3d(120px, 20px, -120px) scale(0.85) rotateY(-18deg) !important;
-    z-index: 1 !important;
+  /* INACTIVE CARD STATE */
+  .ps-inactive-card {
+    transform: scale(0.92);
     opacity: 0.45 !important;
-    filter: grayscale(80%) blur(0.8px) !important;
-    pointer-events: auto !important;
+    filter: grayscale(80%);
   }
 
-  .is-back-moon:hover {
+  .ps-inactive-card:hover {
     opacity: 0.75 !important;
-    filter: grayscale(20%) blur(0px) !important;
-  }
-
-  /* 360 ORBITAL SWEEP KEYFRAMES */
-  @keyframes moonOrbitToFront {
-    0% { transform: translate3d(120px, 20px, -120px) scale(0.85) rotateY(-18deg); opacity: 0.45; }
-    50% { transform: translate3d(-180px, 0px, -40px) scale(0.9) rotateY(-90deg); opacity: 0.7; }
-    100% { transform: translate3d(0, 0, 40px) scale(1) rotateY(-360deg); opacity: 1; }
-  }
-
-  @keyframes earthOrbitToBack {
-    0% { transform: translate3d(0, 0, 40px) scale(1) rotateY(0deg); opacity: 1; }
-    50% { transform: translate3d(200px, 20px, -60px) scale(0.88) rotateY(180deg); opacity: 0.6; }
-    100% { transform: translate3d(120px, 20px, -120px) scale(0.85) rotateY(342deg); opacity: 0.45; }
-  }
-
-  .anim-orbit-to-front {
-    animation: moonOrbitToFront 0.8s cubic-bezier(0.34, 1.25, 0.64, 1) forwards !important;
-  }
-
-  .anim-orbit-to-back {
-    animation: earthOrbitToBack 0.8s cubic-bezier(0.34, 1.25, 0.64, 1) forwards !important;
+    filter: grayscale(20%);
   }
 </style>
 
@@ -227,13 +201,9 @@ eleventyExcludeFromCollections: false
     var pillEnt = document.getElementById('pill-enterprise');
     var pillCust = document.getElementById('pill-custom');
 
-    cardEnt.classList.remove('anim-orbit-to-front', 'anim-orbit-to-back');
-    cardCust.classList.remove('anim-orbit-to-front', 'anim-orbit-to-back');
-    void cardEnt.offsetWidth; // Force Reflow
-
     if (targetTier === 'enterprise') {
-      cardEnt.className = 'ps-3d-card is-front-earth anim-orbit-to-front';
-      cardCust.className = 'ps-3d-card is-back-moon anim-orbit-to-back';
+      cardEnt.className = 'ps-card-stage ps-active-card';
+      cardCust.className = 'ps-card-stage ps-inactive-card';
 
       cardEnt.style.borderColor = '#2563EB';
       cardCust.style.borderColor = '#E2E8F0';
@@ -246,8 +216,8 @@ eleventyExcludeFromCollections: false
       pillCust.style.color = '#64748B';
       pillCust.style.boxShadow = 'none';
     } else {
-      cardCust.className = 'ps-3d-card is-front-earth anim-orbit-to-front';
-      cardEnt.className = 'ps-3d-card is-back-moon anim-orbit-to-back';
+      cardCust.className = 'ps-card-stage ps-active-card';
+      cardEnt.className = 'ps-card-stage ps-inactive-card';
 
       cardCust.style.borderColor = '#0F172A';
       cardEnt.style.borderColor = '#E2E8F0';
