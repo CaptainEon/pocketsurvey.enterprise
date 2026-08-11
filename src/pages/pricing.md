@@ -16,9 +16,9 @@ eleventyExcludeFromCollections: false
 ---
 
 <section style="background-color: #FAFAFA; color: #18181B; padding: 64px 0 80px 0; border-bottom: 1px solid #E4E4E7; min-height: 80vh;">
-  <div style="max-width: 1100px; padding: 0 24px; margin: 0 auto;">
+  <div style="max-width: 1050px; padding: 0 20px; margin: 0 auto;">
 
-    <!-- Hero Header -->
+    <!-- Minimal Header -->
     <div style="text-align: center; margin-bottom: 48px;">
       <span class="ps-badge-platinum" style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.8rem; padding: 6px 14px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 20px; display: inline-block; margin-bottom: 16px;">
         ENTERPRISE LICENSING
@@ -31,11 +31,11 @@ eleventyExcludeFromCollections: false
       </p>
     </div>
 
-    <!-- Forced 2-Column Side-by-Side Grid -->
-    <div class="ps-pricing-grid">
+    <!-- Forced Inline Side-by-Side Flexbox Container -->
+    <div style="display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; gap: 28px !important; align-items: stretch !important; width: 100% !important;">
       
       <!-- Card 1: Enterprise -->
-      <div class="ps-card-classic" style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+      <div style="flex: 1 1 320px !important; min-width: 300px; background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0, 0, 0, 0.08)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.04)';">
         <div>
           <!-- Blue Top Header Banner -->
           <div style="background: #2563EB; padding: 24px; text-align: center; color: #FFFFFF;">
@@ -103,7 +103,7 @@ eleventyExcludeFromCollections: false
       </div>
 
       <!-- Card 2: Custom Bespoke -->
-      <div class="ps-card-classic" style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+      <div style="flex: 1 1 320px !important; min-width: 300px; background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 20px 40px rgba(0, 0, 0, 0.08)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0, 0, 0, 0.04)';">
         <div>
           <!-- Dark Header Banner -->
           <div style="background: #0F172A; padding: 24px; text-align: center; color: #FFFFFF;">
@@ -173,26 +173,3 @@ eleventyExcludeFromCollections: false
 
   </div>
 </section>
-
-<!-- Strict 2-Column Responsive CSS -->
-<style>
-  .ps-pricing-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: stretch;
-  }
-
-  .ps-card-classic:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08) !important;
-  }
-
-  /* Responsive Fallback for Mobile Screens */
-  @media (max-width: 768px) {
-    .ps-pricing-grid {
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-  }
-</style>
