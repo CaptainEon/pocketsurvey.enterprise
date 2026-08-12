@@ -43,8 +43,8 @@ templateEngineOverride: njk, html
       <!-- 1. STOCK CONDITION SURVEYS -->
       <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="Housing Stock Condition Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="Housing Stock Condition Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
@@ -56,15 +56,15 @@ templateEngineOverride: njk, html
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <button onclick="openVideoModal('Zn33KUk3ekA')" style="background: transparent; border: none; padding: 0; color: #2563EB; font-weight: 700; font-size: 0.83rem; cursor: pointer;">Play Video Demo <i class="fa-solid fa-play" style="font-size: 0.75rem; margin-left: 4px;"></i></button>
         </div>
       </div>
 
       <!-- 2. COMMERCIAL PLANNED MAINTENANCE (PPM) -->
       <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('Y3S89r-L1i0')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/Y3S89r-L1i0/hqdefault.jpg" alt="Commercial Planned Maintenance PPM Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('JoCN_G30zko')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/JoCN_G30zko/hqdefault.jpg" alt="Commercial Planned Maintenance PPM Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
@@ -76,15 +76,15 @@ templateEngineOverride: njk, html
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=Y3S89r-L1i0" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <button onclick="openVideoModal('JoCN_G30zko')" style="background: transparent; border: none; padding: 0; color: #2563EB; font-weight: 700; font-size: 0.83rem; cursor: pointer;">Play Video Demo <i class="fa-solid fa-play" style="font-size: 0.75rem; margin-left: 4px;"></i></button>
         </div>
       </div>
 
       <!-- 3. DECENT HOMES STANDARDS -->
       <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="Decent Homes Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="Decent Homes Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
@@ -96,7 +96,7 @@ templateEngineOverride: njk, html
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <button onclick="openVideoModal('Zn33KUk3ekA')" style="background: transparent; border: none; padding: 0; color: #2563EB; font-weight: 700; font-size: 0.83rem; cursor: pointer;">Play Video Demo <i class="fa-solid fa-play" style="font-size: 0.75rem; margin-left: 4px;"></i></button>
         </div>
       </div>
 
@@ -116,15 +116,15 @@ templateEngineOverride: njk, html
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=Xt71AaEaAmg" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <button onclick="openVideoModal('Xt71AaEaAmg')" style="background: transparent; border: none; padding: 0; color: #2563EB; font-weight: 700; font-size: 0.83rem; cursor: pointer;">Play Video Demo <i class="fa-solid fa-play" style="font-size: 0.75rem; margin-left: 4px;"></i></button>
         </div>
       </div>
 
       <!-- 5. SHQS (SCOTTISH HOUSING QUALITY STANDARD) -->
       <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="SHQS Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('0er9_dD_758')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/0er9_dD_758/hqdefault.jpg" alt="SHQS Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
@@ -136,27 +136,27 @@ templateEngineOverride: njk, html
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <button onclick="openVideoModal('0er9_dD_758')" style="background: transparent; border: none; padding: 0; color: #2563EB; font-weight: 700; font-size: 0.83rem; cursor: pointer;">Play Video Demo <i class="fa-solid fa-play" style="font-size: 0.75rem; margin-left: 4px;"></i></button>
         </div>
       </div>
 
       <!-- 6. WHQS (WELSH QUALITY HOUSING STANDARD) -->
       <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="WHQS Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="WHQS Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
           </div>
           <div style="padding: 22px;">
-            <span style="background: #EFF6FF; color: #2563EB; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(37,99,235,0.2); display: inline-block; margin-bottom: 10px;">REGULATORY COMPLIANCE</span>
+            <span style="background: #ECFDF5; color: #059669; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(16,185,129,0.2); display: inline-block; margin-bottom: 10px;">REGULATORY COMPLIANCE</span>
             <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Welsh Housing Quality Standard (WHQS)</h3>
             <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Mobile stock condition surveys tailored for registered social landlords in Wales tracking WHQS 2023 compliance.</p>
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <button onclick="openVideoModal('Zn33KUk3ekA')" style="background: transparent; border: none; padding: 0; color: #2563EB; font-weight: 700; font-size: 0.83rem; cursor: pointer;">Play Video Demo <i class="fa-solid fa-play" style="font-size: 0.75rem; margin-left: 4px;"></i></button>
         </div>
       </div>
 
@@ -183,7 +183,7 @@ templateEngineOverride: njk, html
 </div>
 
 <style>
-  /* Brings Hovered Card to Front */
+  /* Hover effects */
   .ps-video-card:hover {
     transform: translateY(-8px) scale(1.03) !important;
     border-color: #2563EB !important;
@@ -215,6 +215,11 @@ templateEngineOverride: njk, html
     iframe.src = '';
     modal.style.display = 'none';
   }
+
+  // Close modal when clicking dark overlay outside video
+  document.getElementById('ps-video-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeVideoModal();
+  });
 
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeVideoModal();
