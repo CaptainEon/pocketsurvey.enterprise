@@ -46,6 +46,8 @@ templateEngineOverride: njk, html
         <!-- Form Body -->
         <div style="padding: 36px 32px;">
           <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+            
+            <!-- Row 1: Name & Email -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
               <div>
                 <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
@@ -57,16 +59,25 @@ templateEngineOverride: njk, html
               </div>
             </div>
 
-            <div>
-              <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Phone Number</label>
-              <input type="tel" name="phone" placeholder="0161 515 1414" style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'">
+            <!-- Row 2: Phone Number & Company Name -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+              <div>
+                <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Phone Number</label>
+                <input type="tel" name="phone" placeholder="0161 515 1414" style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'">
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Company Name</label>
+                <input type="text" name="company" placeholder="e.g. Acme Surveyors" style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'">
+              </div>
             </div>
 
+            <!-- Row 3: Problem Description -->
             <div>
               <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Problem Description / Details</label>
               <textarea name="description" rows="4" placeholder="Please describe the issue or features you need help with..." required style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s; resize: vertical;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'"></textarea>
             </div>
 
+            <!-- Footer Action & Security Notice -->
             <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 4px; border-top: 1px solid #F1F5F9; padding-top: 20px;">
               <div style="font-size: 0.78rem; color: #64748B;">
                 <i class="fa-solid fa-shield-halved" style="color: #059669; margin-right: 4px;"></i> Protected by secure enterprise SSL.
