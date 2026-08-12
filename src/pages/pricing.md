@@ -82,7 +82,7 @@ templateEngineOverride: njk, html
           </div>
         </div>
         <div style="padding: 18px 24px; background: #F8FAFC; border-top: 1px solid #E2E8F0; text-align: center;">
-          <a href="/enquiry.htm" class="ps-header-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">Book Enterprise Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+          <a href="/demo/" class="ps-header-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">Book Enterprise Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
         </div>
       </div>
 
@@ -130,7 +130,7 @@ templateEngineOverride: njk, html
           </div>
         </div>
         <div style="padding: 18px 24px; background: #F8FAFC; border-top: 1px solid #E2E8F0; text-align: center;">
-          <a href="/enquiry.htm" class="ps-hero-secondary-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; border-color: #CBD5E1; color: #09090B !important;">Discuss Custom App <i class="fa-solid fa-comments" style="margin-left: 6px; color: #2563EB;"></i></a>
+          <a href="/demo/" class="ps-hero-secondary-cta" style="display: block; width: 100%; padding: 12px 20px; font-size: 0.9rem; box-sizing: border-box; text-align: center; margin: 0; border-color: #CBD5E1; color: #09090B !important;">Discuss Custom App <i class="fa-solid fa-comments" style="margin-left: 6px; color: #2563EB;"></i></a>
         </div>
       </div>
 
