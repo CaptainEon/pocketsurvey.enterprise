@@ -1,9 +1,9 @@
 ---
 _schema: default
-title: Video Demos & Product Walkthroughs | PocketSurvey
+title: Stock Condition & Planned Maintenance Video Demos | PocketSurvey
 seo:
   page_description: >-
-    Watch PocketSurvey Enterprise in action. Explore mobile surveying workflows, stock condition audits, fire safety inspections, and automated reporting.
+    Watch PocketSurvey Enterprise in action. Video demonstrations for Stock Condition, Commercial Planned Maintenance, Decent Homes, HHSRS, SHQS, and WHQS surveying.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -20,68 +20,99 @@ templateEngineOverride: njk, html
   <div style="max-width: 1240px; margin: 0 auto; width: 100%; box-sizing: border-box;">
     
     <!-- Header Section -->
-    <div style="text-align: center; margin-bottom: 36px;">
+    <div style="text-align: center; margin-bottom: 48px;">
       <span style="background: rgba(37, 99, 235, 0.08); color: #2563EB; font-size: 0.75rem; font-weight: 700; padding: 6px 16px; border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 30px; display: inline-block; margin-bottom: 12px; letter-spacing: 1px; text-transform: uppercase;">
-        VIDEO LIBRARY &amp; DEMOS
+        ENTERPRISE DEMO LIBRARY
       </span>
       <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; color: #09090B; margin: 0 0 10px 0; letter-spacing: -0.03em;">
-        PocketSurvey Video Wall
+        Stock Condition &amp; Planned Maintenance Videos
       </h1>
       <p style="font-size: 1.05rem; color: #64748B; max-width: 620px; margin: 0 auto 20px auto; line-height: 1.5;">
-        Browse our complete library of mobile surveying demos, statutory fire &amp; safety risk audits, and automated PDF reporting walkthroughs.
+        Explore mobile surveying walkthroughs for Stock Condition, Commercial Planned Maintenance (PPM), Decent Homes, HHSRS, SHQS, and WHQS.
       </p>
 
       <!-- YouTube Channel Button -->
       <a href="https://www.youtube.com/@PocketSurvey" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; background: #FF0000; color: #FFFFFF; font-weight: 700; font-size: 0.88rem; padding: 10px 24px; border-radius: 24px; text-decoration: none; box-shadow: 0 4px 14px rgba(255, 0, 0, 0.25); transition: all 0.25s ease;">
-        <i class="fa-brands fa-youtube" style="font-size: 1.15rem;"></i> Subscribe to Our YouTube Channel
+        <i class="fa-brands fa-youtube" style="font-size: 1.15rem;"></i> Visit Our YouTube Channel
       </a>
-    </div>
-
-    <!-- Interactive Filter Pills -->
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 44px;">
-      <button onclick="filterVideos('all')" class="ps-vid-pill active-pill" id="pill-all" style="padding: 9px 22px; border-radius: 24px; border: 1px solid #2563EB; background: #2563EB; color: #FFFFFF; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.25s ease;">All Videos</button>
-      <button onclick="filterVideos('housing')" class="ps-vid-pill" id="pill-housing" style="padding: 9px 22px; border-radius: 24px; border: 1px solid #E2E8F0; background: #FFFFFF; color: #64748B; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.25s ease;">Housing &amp; Surveys</button>
-      <button onclick="filterVideos('safety')" class="ps-vid-pill" id="pill-safety" style="padding: 9px 22px; border-radius: 24px; border: 1px solid #E2E8F0; background: #FFFFFF; color: #64748B; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.25s ease;">Fire &amp; Safety Compliance</button>
-      <button onclick="filterVideos('commercial')" class="ps-vid-pill" id="pill-commercial" style="padding: 9px 22px; border-radius: 24px; border: 1px solid #E2E8F0; background: #FFFFFF; color: #64748B; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.25s ease;">Commercial &amp; PPM</button>
-      <button onclick="filterVideos('building')" class="ps-vid-pill" id="pill-building" style="padding: 9px 22px; border-radius: 24px; border: 1px solid #E2E8F0; background: #FFFFFF; color: #64748B; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: all 0.25s ease;">General Building</button>
     </div>
 
     <!-- VIDEO WALL GRID -->
     <div style="display: flex !important; flex-wrap: wrap !important; gap: 24px !important; justify-content: center !important; width: 100% !important; box-sizing: border-box !important;">
       
-      <!-- 1. HOME SURVEY -->
-      <div class="ps-video-card housing building" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
+      <!-- 1. STOCK CONDITION SURVEYS -->
+      <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="Home Survey Demo Video" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="Housing Stock Condition Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
           </div>
           <div style="padding: 22px;">
-            <span style="background: #EFF6FF; color: #2563EB; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(37,99,235,0.2); display: inline-block; margin-bottom: 10px;">SURVEYING PRACTICES</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Home Survey &amp; RICS Condition Walkthrough</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Watch how chartered surveyors capture residential defects on mobile and output client-ready PDF reports on site.</p>
+            <span style="background: #EFF6FF; color: #2563EB; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(37,99,235,0.2); display: inline-block; margin-bottom: 10px;">HOUSING STOCK</span>
+            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Housing Stock Condition Survey Software</h3>
+            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Comprehensive mobile walkthrough showing how to audit housing stock condition, track component lifespans, and generate CapEx schedules.</p>
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=Zn33KUk3ekA" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
         </div>
       </div>
 
-      <!-- 2. DAMP & MOULD -->
-      <div class="ps-video-card housing safety" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
+      <!-- 2. COMMERCIAL PLANNED MAINTENANCE (PPM) -->
+      <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('Xt71AaEaAmg')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/Xt71AaEaAmg/hqdefault.jpg" alt="Damp and Mould Inspection Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('Y3S89r-L1i0')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/Y3S89r-L1i0/hqdefault.jpg" alt="Commercial Planned Maintenance PPM Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
           </div>
           <div style="padding: 22px;">
-            <span style="background: #FEF3C7; color: #D97706; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(217,119,6,0.2); display: inline-block; margin-bottom: 10px;">HOUSING &amp; HHSRS</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Damp &amp; Mould Inspection Software</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Learn how housing associations and councils perform fast damp, mould, and HHSRS risk audits on mobile devices.</p>
+            <span style="background: #F3E8FF; color: #7C3AED; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(124,58,237,0.2); display: inline-block; margin-bottom: 10px;">COMMERCIAL &amp; FM</span>
+            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Commercial Planned Maintenance (PPM) Survey</h3>
+            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Demonstrating commercial estate inspections using standard RICS, SFG20, and NHS 6-Facet planned preventative maintenance frameworks.</p>
+          </div>
+        </div>
+        <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
+          <a href="https://www.youtube.com/watch?v=Y3S89r-L1i0" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+        </div>
+      </div>
+
+      <!-- 3. DECENT HOMES STANDARDS -->
+      <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
+        <div>
+          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="Decent Homes Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
+              <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
+            </div>
+          </div>
+          <div style="padding: 22px;">
+            <span style="background: #ECFEFF; color: #0891B2; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(8,145,178,0.2); display: inline-block; margin-bottom: 10px;">SOCIAL HOUSING</span>
+            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Decent Homes Standard Auditing</h3>
+            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Auditing social housing properties against national Decent Homes criteria on mobile with automated compliance reporting.</p>
+          </div>
+        </div>
+        <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
+          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+        </div>
+      </div>
+
+      <!-- 4. HHSRS DAMP & MOULD HAZARD SURVEYS -->
+      <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
+        <div>
+          <div onclick="openVideoModal('Xt71AaEaAmg')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/Xt71AaEaAmg/hqdefault.jpg" alt="HHSRS Damp and Mould Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
+              <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
+            </div>
+          </div>
+          <div style="padding: 22px;">
+            <span style="background: #FEF3C7; color: #D97706; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(217,119,6,0.2); display: inline-block; margin-bottom: 10px;">HHSRS &amp; HAZARDS</span>
+            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">HHSRS Risk &amp; Damp/Mould Audits</h3>
+            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Identify, score, and remediate Housing Health and Safety Rating System (HHSRS) hazards, dampness, and mould growth.</p>
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
@@ -89,143 +120,43 @@ templateEngineOverride: njk, html
         </div>
       </div>
 
-      <!-- 3. FIRE DOOR INSPECTION -->
-      <div class="ps-video-card safety" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
+      <!-- 5. SHQS (SCOTTISH HOUSING QUALITY STANDARD) -->
+      <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('0er9_dD_758')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/0er9_dD_758/hqdefault.jpg" alt="Fire Door Inspection Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="SHQS Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
           </div>
           <div style="padding: 22px;">
-            <span style="background: #FEE2E2; color: #DC2626; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(220,38,38,0.2); display: inline-block; margin-bottom: 10px;">FIRE SAFETY</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Fire Door Auditing &amp; Compliance</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Automate statutory fire door checks, log non-compliances with inline photos, and assign corrective actions.</p>
+            <span style="background: #EFF6FF; color: #2563EB; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(37,99,235,0.2); display: inline-block; margin-bottom: 10px;">REGULATORY COMPLIANCE</span>
+            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Scottish Housing Quality Standard (SHQS)</h3>
+            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Structured mobile assessment for social landlords in Scotland auditing SHQS compliance across residential portfolios.</p>
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=0er9_dD_758" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
         </div>
       </div>
 
-      <!-- 4. STOCK CONDITION -->
-      <div class="ps-video-card housing" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
+      <!-- 6. WHQS (WELSH QUALITY HOUSING STANDARD) -->
+      <div class="ps-video-card" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
         <div>
-          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="Stock Condition Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
+          <div onclick="openVideoModal('3o7N14A_7as')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
+            <img src="https://img.youtube.com/vi/3o7N14A_7as/hqdefault.jpg" alt="WHQS Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
             <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
               <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
             </div>
           </div>
           <div style="padding: 22px;">
-            <span style="background: #EFF6FF; color: #2563EB; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(37,99,235,0.2); display: inline-block; margin-bottom: 10px;">HOUSING STOCK</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Housing Stock Condition &amp; Decent Homes</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">See how housing providers audit residential stock condition, Decent Homes standards, and long-term CapEx schedules.</p>
+            <span style="background: #EFF6FF; color: #2563EB; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(37,99,235,0.2); display: inline-block; margin-bottom: 10px;">REGULATORY COMPLIANCE</span>
+            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Welsh Housing Quality Standard (WHQS)</h3>
+            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Mobile stock condition surveys tailored for registered social landlords in Wales tracking WHQS 2023 compliance.</p>
           </div>
         </div>
         <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=Zn33KUk3ekA" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
-        </div>
-      </div>
-
-      <!-- 5. LEGIONELLA ASSESSMENT -->
-      <div class="ps-video-card safety commercial" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
-        <div>
-          <div onclick="openVideoModal('JoCN_G30zko')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/JoCN_G30zko/hqdefault.jpg" alt="Legionella Risk Assessment Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
-              <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
-            </div>
-          </div>
-          <div style="padding: 22px;">
-            <span style="background: #F3E8FF; color: #7C3AED; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(124,58,237,0.2); display: inline-block; margin-bottom: 10px;">SAFETY &amp; HYGIENE</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Legionella Water Risk Assessment</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Log sample points, record water temperatures, and generate automated legionella risk reports for estate clients.</p>
-          </div>
-        </div>
-        <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=JoCN_G30zko" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
-        </div>
-      </div>
-
-      <!-- 6. PLANNED MAINTENANCE (PPM) -->
-      <div class="ps-video-card commercial" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
-        <div>
-          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="Planned Maintenance Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
-              <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
-            </div>
-          </div>
-          <div style="padding: 22px;">
-            <span style="background: #ECFEFF; color: #0891B2; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(8,145,178,0.2); display: inline-block; margin-bottom: 10px;">COMMERCIAL &amp; FM</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Planned Preventative Maintenance (PPM)</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Audit commercial building fabric, mechanical &amp; electrical assets using RICS and SFG20 maintenance standards.</p>
-          </div>
-        </div>
-        <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=Zn33KUk3ekA" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
-        </div>
-      </div>
-
-      <!-- 7. FIRE RISK ASSESSMENT -->
-      <div class="ps-video-card safety" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
-        <div>
-          <div onclick="openVideoModal('0er9_dD_758')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/0er9_dD_758/hqdefault.jpg" alt="Fire Risk Assessment Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
-              <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
-            </div>
-          </div>
-          <div style="padding: 22px;">
-            <span style="background: #FEE2E2; color: #DC2626; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(220,38,38,0.2); display: inline-block; margin-bottom: 10px;">FIRE SAFETY</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Fire Risk Assessment (Type 1-4)</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Conduct thorough Fire Risk Assessments across common parts and flats, capturing hazards and compliance action plans.</p>
-          </div>
-        </div>
-        <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=0er9_dD_758" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
-        </div>
-      </div>
-
-      <!-- 8. ASBESTOS SURVEYING -->
-      <div class="ps-video-card safety" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
-        <div>
-          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="Asbestos Surveying Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
-              <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
-            </div>
-          </div>
-          <div style="padding: 22px;">
-            <span style="background: #F3E8FF; color: #7C3AED; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid rgba(124,58,237,0.2); display: inline-block; margin-bottom: 10px;">SAFETY COMPLIANCE</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">Asbestos Inspection &amp; Lab Workflow</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Log sample points on site, integrate lab analysis results easily, and generate complete asbestos register reports.</p>
-          </div>
-        </div>
-        <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=Zn33KUk3ekA" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
-        </div>
-      </div>
-
-      <!-- 9. GENERAL BUILDING CONDITION -->
-      <div class="ps-video-card building commercial" style="flex: 1 1 340px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.03); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 1;">
-        <div>
-          <div onclick="openVideoModal('Zn33KUk3ekA')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000000; cursor: pointer; overflow: hidden;">
-            <img src="https://img.youtube.com/vi/Zn33KUk3ekA/hqdefault.jpg" alt="Building Condition Survey Demo" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: all 0.35s ease;" class="ps-thumb-img" />
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; background: rgba(37, 99, 235, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); transition: all 0.35s ease;" class="ps-play-btn">
-              <i class="fa-solid fa-play" style="font-size: 1.3rem; margin-left: 3px;"></i>
-            </div>
-          </div>
-          <div style="padding: 22px;">
-            <span style="background: #F8FAFC; color: #0F172A; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; border: 1px solid #E2E8F0; display: inline-block; margin-bottom: 10px;">GENERAL BUILDING</span>
-            <h3 style="font-size: 1.12rem; font-weight: 700; color: #0F172A; margin: 0 0 6px 0; line-height: 1.35;">General Building Condition Audits</h3>
-            <p style="font-size: 0.84rem; color: #64748B; margin: 0; line-height: 1.5;">Configurable building condition survey template for structural, mechanical, and room-by-room maintenance assessments.</p>
-          </div>
-        </div>
-        <div style="padding: 14px 22px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.youtube.com/watch?v=Zn33KUk3ekA" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <a href="https://www.youtube.com/watch?v=3o7N14A_7as" target="_blank" rel="noopener noreferrer" style="color: #2563EB; font-weight: 700; font-size: 0.83rem; text-decoration: none;">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
         </div>
       </div>
 
@@ -234,7 +165,7 @@ templateEngineOverride: njk, html
     <!-- Bottom Banner CTA -->
     <div style="margin-top: 60px; background: #0F172A; border-radius: 20px; padding: 40px 28px; text-align: center; color: #FFFFFF;">
       <h2 style="font-size: 1.65rem; font-weight: 800; margin: 0 0 8px 0; color: #FFFFFF;">Need a Personalised Module Walkthrough?</h2>
-      <p style="font-size: 0.98rem; color: #94A3B8; max-width: 540px; margin: 0 auto 24px auto;">Book a 1-on-1 demo with our UK technical team to see how PocketSurvey handles your specific inspection templates.</p>
+      <p style="font-size: 0.98rem; color: #94A3B8; max-width: 540px; margin: 0 auto 24px auto;">Book a 1-on-1 demo with our technical surveying leads to see how PocketSurvey handles your specific inspection templates.</p>
       <a href="/enquiry.htm" class="ps-header-cta" style="display: inline-block; padding: 12px 30px; font-size: 0.95rem;">Book a Live Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
     </div>
 
@@ -252,7 +183,7 @@ templateEngineOverride: njk, html
 </div>
 
 <style>
-  /* Modern Hover Effect - Brings Card to Foreground */
+  /* Brings Hovered Card to Front */
   .ps-video-card:hover {
     transform: translateY(-8px) scale(1.03) !important;
     border-color: #2563EB !important;
@@ -271,32 +202,6 @@ templateEngineOverride: njk, html
 </style>
 
 <script>
-  function filterVideos(category) {
-    var cards = document.getElementsByClassName('ps-video-card');
-    var pills = document.getElementsByClassName('ps-vid-pill');
-
-    for (var i = 0; i < pills.length; i++) {
-      pills[i].style.background = '#FFFFFF';
-      pills[i].style.color = '#64748B';
-      pills[i].style.borderColor = '#E2E8F0';
-    }
-
-    var activePill = document.getElementById('pill-' + category);
-    if (activePill) {
-      activePill.style.background = '#2563EB';
-      activePill.style.color = '#FFFFFF';
-      activePill.style.borderColor = '#2563EB';
-    }
-
-    for (var j = 0; j < cards.length; j++) {
-      if (category === 'all' || cards[j].classList.contains(category)) {
-        cards[j].style.display = 'flex';
-      } else {
-        cards[j].style.display = 'none';
-      }
-    }
-  }
-
   function openVideoModal(youtubeId) {
     var modal = document.getElementById('ps-video-modal');
     var iframe = document.getElementById('ps-modal-iframe');
