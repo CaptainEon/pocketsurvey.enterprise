@@ -165,7 +165,7 @@ templateEngineOverride: njk, html
     <div style="margin-top: 56px; background: #202124; border-radius: 14px; padding: 36px 28px; text-align: center; color: #FFFFFF;">
       <h2 style="font-size: 1.55rem; font-weight: 800; margin: 0 0 8px 0; color: #FFFFFF;">Need Your Firm's Custom Branding on Reports?</h2>
       <p style="font-size: 0.95rem; color: #9AA0A6; max-width: 560px; margin: 0 auto 24px auto;">We configure custom executive summaries, corporate logos, disclaimers, and CSV data exporters to match your exact business requirements.</p>
-      <a href="/enquiry.htm" class="ps-header-cta" style="display: inline-block; padding: 12px 28px; font-size: 0.9rem; background: #1A73E8;">Book Technical Consult <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+  <a href="/demo/" class="ps-header-cta" style="display: inline-block; padding: 12px 28px; font-size: 0.9rem; background: #1A73E8;">Book Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
     </div>
 
   </div>
