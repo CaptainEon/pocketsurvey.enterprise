@@ -11,8 +11,9 @@ seo:
   open_graph_type:
   no_index: false
 layout: layouts/component-page.html
-permalink: /sectors/surveying-practices/
+permalink: /surveying-practices/
 eleventyExcludeFromCollections: false
+templateEngineOverride: njk, md
 content_blocks:
   - _type: components/hero
     background_color: '#FAFAFA'
