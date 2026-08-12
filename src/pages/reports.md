@@ -38,8 +38,8 @@ templateEngineOverride: njk, html
       <!-- CARD 1: HOUSING STOCK CONDITION (UK TERRACED HOUSES) -->
       <div class="ps-report-card" style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
         <div>
-          <!-- Imagery Top Banner with UK Terraced Houses -->
-          <div onclick="openReportModal('https://www.pocketsurvey.org/stock-condition/housing-stock-condition-report.pdf', 'Housing Stock Condition Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1592595896616-c37162298647?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
+          <!-- UK Terraced Houses Image -->
+          <div onclick="openReportModal('https://www.pocketsurvey.org/stock-condition/housing-stock-condition-report.pdf', 'Housing Stock Condition Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
             
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.85) 100%); z-index: 1;"></div>
 
@@ -77,10 +77,9 @@ templateEngineOverride: njk, html
         </div>
       </div>
 
-      <!-- CARD 2: COMMERCIAL PLANNED MAINTENANCE (COMMERCIAL HIGH RISE) -->
+      <!-- CARD 2: COMMERCIAL PLANNED MAINTENANCE (HIGH RISE COMMERCIAL) -->
       <div class="ps-report-card" style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
         <div>
-          <!-- Imagery Top Banner -->
           <div onclick="openReportModal('https://www.pocketsurvey.org/planned-maintenance/planned-maintenance-report.pdf', 'Commercial Planned Maintenance (PPM) Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
             
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.85) 100%); z-index: 1;"></div>
@@ -119,11 +118,11 @@ templateEngineOverride: njk, html
         </div>
       </div>
 
-      <!-- CARD 3: DAMP & MOULD SURVEY (NEUTRAL RESIDENTIAL ROOM) -->
+      <!-- CARD 3: DAMP & MOULD SURVEY (MODEST DOMESTIC ROOM) -->
       <div class="ps-report-card" style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
         <div>
-          <!-- Imagery Top Banner -->
-          <div onclick="openReportModal('https://www.pocketsurvey.org/damp-mould/damp-mould-survey-report.pdf', 'Damp & Mould Survey Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
+          <!-- Modest Domestic Interior Room -->
+          <div onclick="openReportModal('https://www.pocketsurvey.org/damp-mould/damp-mould-survey-report.pdf', 'Damp & Mould Survey Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
             
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.85) 100%); z-index: 1;"></div>
 
@@ -161,11 +160,11 @@ templateEngineOverride: njk, html
         </div>
       </div>
 
-      <!-- CARD 4: HHSRS HAZARD ASSESSMENT (RESIDENTIAL SAFETY & STEPS) -->
+      <!-- CARD 4: HHSRS HAZARD ASSESSMENT (HAZARD WARNING SIGN) -->
       <div class="ps-report-card" style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
         <div>
-          <!-- Imagery Top Banner -->
-          <div onclick="openReportModal('https://www.pocketsurvey.org/hhsrs/hhsrs-housing-health-and-safety-report.pdf', 'HHSRS Housing Health & Safety Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
+          <!-- Hazard Warning Sign Imagery -->
+          <div onclick="openReportModal('https://www.pocketsurvey.org/hhsrs/hhsrs-housing-health-and-safety-report.pdf', 'HHSRS Housing Health & Safety Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
             
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.85) 100%); z-index: 1;"></div>
 
