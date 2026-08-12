@@ -26,23 +26,20 @@ templateEngineOverride: njk, html
   <div class="w3-center" style="margin-bottom:32px;">
     <span class="w3-tag w3-green w3-round" style="letter-spacing:1px; font-weight:700; text-transform:uppercase; font-size:11px; padding:4px 12px; margin-bottom:12px;">Live Consultation</span>
     <h1 style="font-weight:800; color:#202124; font-size:2.2rem; margin-top:8px; margin-bottom:12px;">Book a Meeting with Our Sales Team</h1>
-    <p style="color:#5F6368; font-size:1.05rem; line-height:1.5; max-width:680px; margin:0 auto;">
+    <p style="color:#5F6368; font-size:1.05rem; line-height:1.5; max-width:680px; margin:0 auto 12px auto;">
       Welcome to our online diary. Choose a suitable day and time slot directly from the calendar below.
+    </p>
+    <!-- Notice regarding 7-day rolling availability -->
+    <p style="color:#1E8E3E; font-size:0.92rem; font-weight:700; margin:0;">
+      <i class="fa fa-info-circle" style="margin-right:4px;"></i> Please note: The diary only shows the next 7 days availability.
     </p>
   </div>
 
   <!-- Main Container Card for Inline Calendar -->
-  <div class="w3-card-4 w3-white" style="border-radius:12px; overflow:hidden; border:1px solid #E8EAED; margin-bottom:28px;">
+  <div class="w3-card-4 w3-white" style="border-radius:12px; overflow:hidden; border:1px solid #E8EAED; margin-bottom:28px; padding: 16px;">
     
-    <!-- Feature Banner Bar -->
-    <div style="background:#FAFAFA; border-bottom:1px solid #E8EAED; padding:16px 24px; display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap; gap:16px; text-align:center;">
-      <div><i class="fa fa-mobile" style="color:#1A73E8; margin-right:6px;"></i> <b>Mobile App Walkthrough</b></div>
-      <div><i class="fa fa-file-pdf-o" style="color:#34A853; margin-right:6px;"></i> <b>Automated PDF Deliverables</b></div>
-      <div><i class="fa fa-sliders" style="color:#F29900; margin-right:6px;"></i> <b>Custom Module Configuration</b></div>
-    </div>
-
     <!-- Inline Calendar Target Container -->
-    <div id="google-calendar-inline-slot" style="width: 150%; min-height: 700px; background: #FFFFFF; padding: 12px; box-sizing: border-box;"></div>
+    <div id="google-calendar-inline-slot" style="width: 100%; min-height: 700px; background: #FFFFFF; box-sizing: border-box;"></div>
 
   </div>
 
