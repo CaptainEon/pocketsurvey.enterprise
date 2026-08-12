@@ -1,5 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Building Surveying Software: Client Testimonials & Reviews</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background-color: #FAFAFA; margin: 0; font-family: 'Open Sans', sans-serif;">
+
 <!-- Reviews Main Container -->
-<div id="index" class="w3-auto" style="padding: 40px 16px 80px 16px; max-width: 1200px;">
+<div id="index" class="w3-auto" style="padding: 48px 16px 80px 16px; max-width: 1200px;">
   
   <!-- Page Header -->
   <div class="w3-container w3-center" style="margin-bottom: 48px;">
@@ -13,10 +26,9 @@
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px;">
 
       <!-- REVIEW CARD 1: Arcus Consulting -->
-      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'">
+      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
         <div style="padding: 28px 28px 20px 28px; flex: 1; display: flex; flex-direction: column;">
           
-          <!-- Logo & Stars Top Bar -->
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
             <img src="https://img.logo.dev/arcus.uk.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Arcus Logo" style="max-height: 32px; max-width: 120px; object-fit: contain;">
             <div style="color: #F59E0B; font-size: 0.8rem; display: flex; gap: 2px;">
@@ -27,7 +39,6 @@
           <h3 style="font-size: 1.1rem; font-weight: 800; color: #09090B; margin: 0 0 4px 0; line-height: 1.3;">Customer Service Second To None</h3>
           <div style="font-size: 0.8rem; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Arcus Consulting &bull; Stock Condition Surveys</div>
 
-          <!-- Quote Box -->
           <div style="background: #F8FAFC; border-left: 3px solid #2563EB; padding: 14px 16px; border-radius: 0 12px 12px 0; margin-top: auto;">
             <p style="font-size: 0.88rem; color: #334155; line-height: 1.6; margin: 0 0 12px 0; font-style: italic;">
               "Customer service with pocket survey is always second to none. All team members within PS are extremely helpful. The app is very straightforward to use and allows for stock condition surveys to vast quantities of properties to be completed seamlessly."
@@ -36,7 +47,6 @@
           </div>
         </div>
 
-        <!-- Card Footer Action -->
         <div style="padding: 16px 28px; background: #F8FAFC; border-top: 1px solid #F1F5F9; display: flex; justify-content: space-between; align-items: center;">
           <a href="https://www.pocketsurvey.org/stock-condition/software.htm" style="font-size: 0.82rem; font-weight: 700; color: #2563EB; text-decoration: none;">Explore App &rarr;</a>
           <a href="https://www.arcus.uk.com/" target="_blank" rel="noopener" style="font-size: 0.75rem; color: #94A3B8; text-decoration: none;">Visit Website</a>
@@ -44,7 +54,7 @@
       </div>
 
       <!-- REVIEW CARD 2: Asbestos Surveys & Inspections -->
-      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'">
+      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
         <div style="padding: 28px 28px 20px 28px; flex: 1; display: flex; flex-direction: column;">
           
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
@@ -72,7 +82,7 @@
       </div>
 
       <!-- REVIEW CARD 3: Burrells Wharf -->
-      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'">
+      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
         <div style="padding: 28px 28px 20px 28px; flex: 1; display: flex; flex-direction: column;">
           
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
@@ -99,90 +109,9 @@
         </div>
       </div>
 
-      <!-- REVIEW CARD 4: Calfordseaden -->
-      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'">
-        <div style="padding: 28px 28px 20px 28px; flex: 1; display: flex; flex-direction: column;">
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <img src="https://img.logo.dev/calfordseaden.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Calfordseaden Logo" style="max-height: 32px; max-width: 120px; object-fit: contain;">
-            <div style="color: #F59E0B; font-size: 0.8rem; display: flex; gap: 2px;">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-          </div>
-
-          <h3 style="font-size: 1.1rem; font-weight: 800; color: #09090B; margin: 0 0 4px 0; line-height: 1.3;">Understanding Software Power</h3>
-          <div style="font-size: 0.8rem; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Calfordseaden &bull; M&amp;E Condition Surveys</div>
-
-          <div style="background: #F8FAFC; border-left: 3px solid #2563EB; padding: 14px 16px; border-radius: 0 12px 12px 0; margin-top: auto;">
-            <p style="font-size: 0.88rem; color: #334155; line-height: 1.6; margin: 0 0 12px 0; font-style: italic;">
-              "Thanks very much to James for his help and support over the last two training sessions. His helpful approach has enabled me to quickly understand the power of this software across our planned maintenance and decent homes projects."
-            </p>
-            <span style="font-size: 0.78rem; font-weight: 700; color: #64748B;">&mdash; Peter G</span>
-          </div>
-        </div>
-
-        <div style="padding: 16px 28px; background: #F8FAFC; border-top: 1px solid #F1F5F9; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.pocketsurvey.org/stock-condition/software.htm" style="font-size: 0.82rem; font-weight: 700; color: #2563EB; text-decoration: none;">Explore App &rarr;</a>
-          <a href="https://calfordseaden.com/" target="_blank" rel="noopener" style="font-size: 0.75rem; color: #94A3B8; text-decoration: none;">Visit Website</a>
-        </div>
-      </div>
-
-      <!-- REVIEW CARD 5: Elim Housing -->
-      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'">
-        <div style="padding: 28px 28px 20px 28px; flex: 1; display: flex; flex-direction: column;">
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <img src="https://img.logo.dev/elimhousing.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Elim Housing Logo" style="max-height: 32px; max-width: 120px; object-fit: contain;">
-            <div style="color: #F59E0B; font-size: 0.8rem; display: flex; gap: 2px;">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-          </div>
-
-          <h3 style="font-size: 1.1rem; font-weight: 800; color: #09090B; margin: 0 0 4px 0; line-height: 1.3;">Easy-to-Use Cloud System</h3>
-          <div style="font-size: 0.8rem; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Elim Housing &bull; Decent Homes</div>
-
-          <div style="background: #F8FAFC; border-left: 3px solid #2563EB; padding: 14px 16px; border-radius: 0 12px 12px 0; margin-top: auto;">
-            <p style="font-size: 0.88rem; color: #334155; line-height: 1.6; margin: 0 0 12px 0; font-style: italic;">
-              "The new cloud-based system is extremely easy to use and navigate. It's fully customisable, allowing me to set up my app exactly the way I need it. The reporting functionality is outstanding, making it an invaluable tool."
-            </p>
-            <span style="font-size: 0.78rem; font-weight: 700; color: #64748B;">&mdash; Andy C</span>
-          </div>
-        </div>
-
-        <div style="padding: 16px 28px; background: #F8FAFC; border-top: 1px solid #F1F5F9; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.pocketsurvey.org/stock-condition/software.htm" style="font-size: 0.82rem; font-weight: 700; color: #2563EB; text-decoration: none;">Explore App &rarr;</a>
-          <a href="https://www.elimhousing.co.uk/" target="_blank" rel="noopener" style="font-size: 0.75rem; color: #94A3B8; text-decoration: none;">Visit Website</a>
-        </div>
-      </div>
-
-      <!-- REVIEW CARD 6: Islington Council -->
-      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)'">
-        <div style="padding: 28px 28px 20px 28px; flex: 1; display: flex; flex-direction: column;">
-          
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
-            <img src="https://img.logo.dev/islington.gov.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Islington Council Logo" style="max-height: 32px; max-width: 120px; object-fit: contain;">
-            <div style="color: #F59E0B; font-size: 0.8rem; display: flex; gap: 2px;">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            </div>
-          </div>
-
-          <h3 style="font-size: 1.1rem; font-weight: 800; color: #09090B; margin: 0 0 4px 0; line-height: 1.3;">Most User-Friendly Application</h3>
-          <div style="font-size: 0.8rem; font-weight: 700; color: #2563EB; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Islington Council &bull; Stock Condition Surveys</div>
-
-          <div style="background: #F8FAFC; border-left: 3px solid #2563EB; padding: 14px 16px; border-radius: 0 12px 12px 0; margin-top: auto;">
-            <p style="font-size: 0.88rem; color: #334155; line-height: 1.6; margin: 0 0 12px 0; font-style: italic;">
-              "Excellent functionality for price. By far the most user friendly survey application I've seen to date. Had everything working within 20 minutes of downloading the stock condition survey demo."
-            </p>
-            <span style="font-size: 0.78rem; font-weight: 700; color: #64748B;">&mdash; Derek H</span>
-          </div>
-        </div>
-
-        <div style="padding: 16px 28px; background: #F8FAFC; border-top: 1px solid #F1F5F9; display: flex; justify-content: space-between; align-items: center;">
-          <a href="https://www.pocketsurvey.org/stock-condition/software.htm" style="font-size: 0.82rem; font-weight: 700; color: #2563EB; text-decoration: none;">Explore App &rarr;</a>
-          <a href="https://www.islington.gov.uk/" target="_blank" rel="noopener" style="font-size: 0.75rem; color: #94A3B8; text-decoration: none;">Visit Website</a>
-        </div>
-      </div>
-
     </div>
   </article>
 </div>
+
+</body>
+</html>
