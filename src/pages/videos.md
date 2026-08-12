@@ -222,7 +222,7 @@ templateEngineOverride: njk, html
     <div style="margin-top: 56px; background: #0F172A; border-radius: 20px; padding: 36px 28px; text-align: center; color: #FFFFFF;">
       <h2 style="font-size: 1.6rem; font-weight: 800; margin: 0 0 8px 0; color: #FFFFFF;">Need a Personalised Live Walkthrough?</h2>
       <p style="font-size: 0.95rem; color: #94A3B8; max-width: 520px; margin: 0 auto 24px auto;">Book a 1-on-1 demo with our technical surveying leads to see how PocketSurvey handles your specific inspection templates.</p>
-      <a href="/enquiry.htm" class="ps-header-cta" style="display: inline-block; padding: 12px 28px; font-size: 0.92rem;">Book a Live Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+      <a href="/demo/" class="ps-header-cta" style="display: inline-block; padding: 12px 28px; font-size: 0.92rem;">Book a Live Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
     </div>
 
   </div>
