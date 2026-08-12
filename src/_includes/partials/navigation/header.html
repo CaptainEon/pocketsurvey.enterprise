@@ -86,25 +86,31 @@
   </div>
 
   <!-- Mobile Dropdown Navigation Drawer -->
-  <div id="mobile-nav-drawer" class="w3-hide" style="background-color: #18181B; border-top: 1px solid #27272A; padding: 20px 24px; display: flex; flex-direction: column; gap: 12px;">
+  <div id="mobile-nav-drawer" class="w3-hide" style="background-color: #18181B; border-top: 1px solid #27272A; padding: 20px 24px; display: flex; flex-direction: column; gap: 8px;">
     
-    <div style="font-size: 0.75rem; font-weight: 700; color: #71717A; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Who We Serve</div>
-    <a href="/surveying-practices/" style="color: #FFFFFF; text-decoration: none; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.03); font-size: 0.92rem;"><i class="fa-solid fa-briefcase" style="color: #10B981; margin-right: 8px;"></i> Surveying Practices</a>
-    <a href="/housing-associations/" style="color: #FFFFFF; text-decoration: none; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.03); font-size: 0.92rem;"><i class="fa-solid fa-building-user" style="color: #38BDF8; margin-right: 8px;"></i> Housing Associations</a>
-    <a href="/councils/" style="color: #FFFFFF; text-decoration: none; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.03); font-size: 0.92rem;"><i class="fa-solid fa-landmark" style="color: #F59E0B; margin-right: 8px;"></i> Local Councils</a>
-    <a href="/commercial-fm/" style="color: #FFFFFF; text-decoration: none; padding: 8px 12px; border-radius: 6px; background: rgba(255,255,255,0.03); font-size: 0.92rem;"><i class="fa-solid fa-screwdriver-wrench" style="color: #8B5CF6; margin-right: 8px;"></i> Commercial &amp; FM</a>
-
-    <div style="height: 1px; background: #27272A; margin: 8px 0;"></div>
-
-    <div style="font-size: 0.75rem; font-weight: 700; color: #71717A; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Quick Links</div>
-    <a href="/reports/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 6px 0; font-size: 0.95rem;">Reports</a>
-    <a href="/videos/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 6px 0; font-size: 0.95rem;">Videos</a>
-    <a href="/pricing/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 6px 0; font-size: 0.95rem;">Pricing</a>
-    <a href="/support/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 6px 0; font-size: 0.95rem;">Support</a>
+    <!-- Collapsible Who We Serve Accordion -->
+    <button onclick="toggleMobileSubmenu()" style="background: transparent; border: none; color: #A1A1AA; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 8px 0; cursor: pointer; text-align: left;">
+      Who We Serve <i id="submenu-icon" class="fa-solid fa-plus" style="font-size: 0.85rem; color: #38BDF8;"></i>
+    </button>
     
-    <div style="padding-top: 8px;">
-      <a href="/demo/" class="ps-header-cta" style="display: block; text-align: centre; padding: 12px; border-radius: 8px;">
-        Book Live Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
+    <div id="mobile-submenu" class="w3-hide" style="display: flex; flex-direction: column; gap: 8px; padding-left: 8px; margin-bottom: 8px;">
+      <a href="/surveying-practices/" style="color: #FFFFFF; text-decoration: none; padding: 10px 14px; border-radius: 8px; background: rgba(255,255,255,0.04); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-briefcase" style="color: #10B981; width: 16px;"></i> Surveying Practices</a>
+      <a href="/housing-associations/" style="color: #FFFFFF; text-decoration: none; padding: 10px 14px; border-radius: 8px; background: rgba(255,255,255,0.04); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-building-user" style="color: #38BDF8; width: 16px;"></i> Housing Associations</a>
+      <a href="/councils/" style="color: #FFFFFF; text-decoration: none; padding: 10px 14px; border-radius: 8px; background: rgba(255,255,255,0.04); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-landmark" style="color: #F59E0B; width: 16px;"></i> Local Councils</a>
+      <a href="/commercial-fm/" style="color: #FFFFFF; text-decoration: none; padding: 10px 14px; border-radius: 8px; background: rgba(255,255,255,0.04); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;"><i class="fa-solid fa-screwdriver-wrench" style="color: #8B5CF6; width: 16px;"></i> Commercial &amp; FM</a>
+    </div>
+
+    <div style="height: 1px; background: #27272A; margin: 4px 0;"></div>
+
+    <div style="font-size: 0.78rem; font-weight: 700; color: #A1A1AA; text-transform: uppercase; letter-spacing: 1px; padding: 8px 0 4px 0;">Quick Links</div>
+    <a href="/reports/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 10px 12px; border-radius: 8px; background: rgba(255,255,255,0.02); font-size: 0.95rem;">Reports</a>
+    <a href="/videos/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 10px 12px; border-radius: 8px; background: rgba(255,255,255,0.02); font-size: 0.95rem;">Videos</a>
+    <a href="/pricing/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 10px 12px; border-radius: 8px; background: rgba(255,255,255,0.02); font-size: 0.95rem;">Pricing</a>
+    <a href="/support/" style="color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 10px 12px; border-radius: 8px; background: rgba(255,255,255,0.02); font-size: 0.95rem;">Support</a>
+    
+    <div style="padding-top: 12px; display: flex; justify-content: flex-start;">
+      <a href="/demo/" class="ps-header-cta" style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;">
+        Book Demo <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
       </a>
     </div>
   </div>
@@ -122,6 +128,20 @@
       drawer.classList.add('w3-hide');
       icon.classList.remove('fa-xmark');
       icon.classList.add('fa-bars');
+    }
+  }
+
+  function toggleMobileSubmenu() {
+    var submenu = document.getElementById('mobile-submenu');
+    var subIcon = document.getElementById('submenu-icon');
+    if (submenu.classList.contains('w3-hide')) {
+      submenu.classList.remove('w3-hide');
+      subIcon.classList.remove('fa-plus');
+      subIcon.classList.add('fa-minus');
+    } else {
+      submenu.classList.add('w3-hide');
+      subIcon.classList.remove('fa-minus');
+      subIcon.classList.add('fa-plus');
     }
   }
 </script>
