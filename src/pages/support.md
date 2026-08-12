@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: false
 templateEngineOverride: njk, html
 ---
 
-<div style="background: radial-gradient(circle at 50% 0%, #F8FAFC 0%, #FAFAFA 70%); color: #0F172A; padding: 48px 16px 80px 16px; min-height: 85vh; box-sizing: border-box; width: 100%;">
+<div style="background: radial-gradient(circle at 50% 0%, #F1F5F9 0%, #FAFAFA 70%); color: #0F172A; padding: 48px 16px 80px 16px; min-height: 85vh; box-sizing: border-box; width: 100%;">
   <div style="max-width: 960px; margin: 0 auto; width: 100%; box-sizing: border-box;">
     
     <!-- Hero Section -->
@@ -30,9 +30,11 @@ templateEngineOverride: njk, html
     <div style="display: grid; grid-template-columns: 1fr; gap: 32px;">
 
       <!-- SECTION 1: Modern Ticket Submission Form -->
-      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 36px 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); box-sizing: border-box;">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px; border-bottom: 1px solid #F1F5F9; padding-bottom: 16px;">
-          <div style="width: 40px; height: 40px; background: #EFF6FF; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #2563EB; font-size: 1.1rem;">
+      <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 35px rgba(0,0,0,0.04); box-sizing: border-box;">
+        
+        <!-- Shaded Top Header Box -->
+        <div style="background: #F8FAFC; border-bottom: 1px solid #E2E8F0; padding: 24px 32px; display: flex; align-items: center; gap: 14px;">
+          <div style="width: 44px; height: 44px; background: #EFF6FF; border: 1px solid #DBEAFE; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #2563EB; font-size: 1.15rem;">
             <i class="fa-solid fa-ticket"></i>
           </div>
           <div>
@@ -41,47 +43,51 @@ templateEngineOverride: njk, html
           </div>
         </div>
 
-        <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <!-- Form Body -->
+        <div style="padding: 36px 32px;">
+          <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+              <div>
+                <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
+                <input type="text" name="name" placeholder="e.g. John Smith" required style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'">
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Email Address</label>
+                <input type="email" name="email" placeholder="john@company.com" required style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'">
+              </div>
+            </div>
+
             <div>
-              <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
-              <input type="text" name="name" placeholder="e.g. John Smith" required style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'">
+              <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Phone Number</label>
+              <input type="tel" name="phone" placeholder="0161 515 1414" style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'">
             </div>
+
             <div>
-              <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Email Address</label>
-              <input type="email" name="email" placeholder="john@company.com" required style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'">
+              <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Problem Description / Details</label>
+              <textarea name="description" rows="4" placeholder="Please describe the issue or features you need help with..." required style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: all 0.2s; resize: vertical;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'; this.style.boxShadow='none'"></textarea>
             </div>
-          </div>
 
-          <div>
-            <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Phone Number</label>
-            <input type="tel" name="phone" placeholder="0161 515 1414" style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'">
-          </div>
-
-          <div>
-            <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Problem Description / Details</label>
-            <textarea name="description" rows="4" placeholder="Please describe the issue or features you need help with..." required style="width: 100%; padding: 12px 16px; border: 1px solid #CBD5E1; border-radius: 10px; font-size: 0.95rem; background: #F8FAFC; color: #0F172A; box-sizing: border-box; outline: none; transition: border-color 0.2s; resize: vertical;" onfocus="this.style.borderColor='#2563EB'; this.style.background='#FFFFFF'" onblur="this.style.borderColor='#CBD5E1'; this.style.background='#F8FAFC'"></textarea>
-          </div>
-
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 4px;">
-            <div style="font-size: 0.78rem; color: #64748B;">
-              <i class="fa-solid fa-shield-halved" style="color: #059669; margin-right: 4px;"></i> Protected by secure enterprise SSL.
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 4px; border-top: 1px solid #F1F5F9; padding-top: 20px;">
+              <div style="font-size: 0.78rem; color: #64748B;">
+                <i class="fa-solid fa-shield-halved" style="color: #059669; margin-right: 4px;"></i> Protected by secure enterprise SSL.
+              </div>
+              <button type="submit" class="ps-header-cta" style="padding: 12px 28px; font-size: 0.92rem; border: none; cursor: pointer;">
+                <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Log Support Request
+              </button>
             </div>
-            <button type="submit" class="ps-header-cta" style="padding: 12px 28px; font-size: 0.92rem; border: none; cursor: pointer;">
-              <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Log Support Request
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
+
       </div>
 
-      <!-- SECTION 2: Zoom Support & Training Suite linking to Support Booking Page -->
+      <!-- SECTION 2: Zoom Support & Training Suite -->
       <div style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 20px; padding: 36px 32px; color: #FFFFFF; box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2); box-sizing: border-box; position: relative; overflow: hidden;">
         
         <!-- Decorative Background Glow -->
         <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(37, 99, 235, 0.2); border-radius: 50%; filter: blur(40px); pointer-events: none;"></div>
 
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-          <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #38BDF8; font-size: 1.1rem; backdrop-filter: blur(8px);">
+          <div style="width: 44px; height: 44px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #38BDF8; font-size: 1.15rem; backdrop-filter: blur(8px);">
             <i class="fa-solid fa-video"></i>
           </div>
           <div>
