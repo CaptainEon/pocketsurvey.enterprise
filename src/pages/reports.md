@@ -145,7 +145,7 @@ templateEngineOverride: njk, html
           </div>
 
           <div style="padding: 20px;">
-            <p style="font-size: 0.85rem; color: #5F6368; margin: 0 0 14px 0; line-height: 1.5;">Evaluates 29 statutory housing health and safety hazards, assigning risk likelihood scores and urgent remediation plans.</p>
+            <p style="font-size: 0.85rem; color: #5F6368; margin: 0 0 14px 0; line-height: 1.5;">Evaluates 21 statutory housing health and safety hazards, assigning risk likelihood scores and urgent remediation plans.</p>
             <div style="display: flex; gap: 12px; font-size: 0.75rem; color: #5F6368; font-weight: 600;">
               <span><i class="fa-solid fa-triangle-exclamation" style="color: #F29900; margin-right: 4px;"></i> Hazard Scoring</span>
               <span><i class="fa-solid fa-house-medical" style="color: #EA4335; margin-right: 4px;"></i> Category 1 &amp; 2</span>
