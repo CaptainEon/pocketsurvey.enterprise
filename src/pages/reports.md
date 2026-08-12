@@ -280,9 +280,15 @@ templateEngineOverride: njk, html
     var titleElem = document.getElementById('ps-modal-report-title');
     var downloadBtn = document.getElementById('ps-modal-download-btn');
 
+    // Ensure link uses HTTPS
+    var securePdfUrl = pdfUrl.replace('http://', 'https://');
+
     titleElem.innerText = reportTitle;
-    downloadBtn.href = pdfUrl;
-    iframe.src = pdfUrl;
+    downloadBtn.href = securePdfUrl;
+    
+    // Uses Google's Document Embedder to safely render cross-domain PDFs inside the modal
+    iframe.src = 'https://docs.google.com/gview?url=' + encodeURIComponent(securePdfUrl) + '&embedded=true';
+    
     modal.style.display = 'flex';
   }
 
