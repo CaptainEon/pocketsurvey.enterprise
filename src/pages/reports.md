@@ -39,7 +39,7 @@ templateEngineOverride: njk, html
       <div class="ps-report-card" style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
         <div>
           <!-- UK Terraced Houses Image -->
-          <div onclick="openReportModal('https://www.pocketsurvey.org/stock-condition/housing-stock-condition-report.pdf', 'Housing Stock Condition Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
+          <div onclick="openReportModal('https://www.pocketsurvey.org/stock-condition/housing-stock-condition-report.pdf', 'Housing Stock Condition Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1592595896616-c37162298647?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
             
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.85) 100%); z-index: 1;"></div>
 
@@ -77,7 +77,7 @@ templateEngineOverride: njk, html
         </div>
       </div>
 
-      <!-- CARD 2: COMMERCIAL PLANNED MAINTENANCE (HIGH RISE COMMERCIAL) -->
+      <!-- CARD 2: COMMERCIAL PLANNED MAINTENANCE (COMMERCIAL HIGH RISE) -->
       <div class="ps-report-card" style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
         <div>
           <div onclick="openReportModal('https://www.pocketsurvey.org/planned-maintenance/planned-maintenance-report.pdf', 'Commercial Planned Maintenance (PPM) Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
@@ -118,11 +118,11 @@ templateEngineOverride: njk, html
         </div>
       </div>
 
-      <!-- CARD 3: DAMP & MOULD SURVEY (MODEST DOMESTIC ROOM) -->
+      <!-- CARD 3: DAMP & MOULD SURVEY (VENTILATION / TIMBER FOCUS) -->
       <div class="ps-report-card" style="background: #FFFFFF; border: 1px solid #E8EAED; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.03); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
         <div>
-          <!-- Modest Domestic Interior Room -->
-          <div onclick="openReportModal('https://www.pocketsurvey.org/damp-mould/damp-mould-survey-report.pdf', 'Damp & Mould Survey Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
+          <!-- Ventilation & Airflow Focus Image -->
+          <div onclick="openReportModal('https://www.pocketsurvey.org/damp-mould/damp-mould-survey-report.pdf', 'Damp & Mould Survey Sample Report')" style="position: relative; width: 100%; aspect-ratio: 16/9; background: #202124 url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80') center/cover no-repeat; cursor: pointer; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 18px; box-sizing: border-box; color: #FFFFFF;">
             
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(15,23,42,0.4) 0%, rgba(15,23,42,0.85) 100%); z-index: 1;"></div>
 
