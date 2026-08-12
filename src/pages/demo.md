@@ -60,13 +60,12 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- EMBEDDED GOOGLE APPOINTMENT SCHEDULER -->
-      <div style="width: 100%; position: relative; min-height: 680px; background: #FFFFFF; padding: 8px; box-sizing: border-box;">
+      <div style="width: 100%; position: relative; min-height: 700px; background: #FFFFFF; padding: 8px; box-sizing: border-box;">
         <iframe 
-          src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Ef1kx_qWwXxjzc35suiWttsphO6FKSs7yNp1oVOuWn9mXMY5iDA_F8rn4QO9-mBUwmjPR4Fzn?gv=true" 
-          style="border: 0; width: 100%; height: 680px; min-height: 600px;" 
+          src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Ef1kx_qWwXxjzc35suiWttsphO6FKSs7yNp1oVOuWn9mXMY5iDA_F8rn4QO9-mBUwmjPR4Fzn?gv=true" 
+          style="border: 0; width: 100%; height: 720px; min-height: 650px;" 
           frameborder="0" 
-          scrolling="yes"
-          loading="lazy">
+          scrolling="yes">
         </iframe>
       </div>
 
