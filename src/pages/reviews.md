@@ -36,7 +36,7 @@ templateEngineOverride: njk, html
     <div style="display: flex !important; flex-wrap: wrap !important; gap: 24px !important; justify-content: center !important; width: 100% !important; box-sizing: border-box !important;">
       
       <!-- 1. Arcus Consulting -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/arcus.uk.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Arcus Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -60,7 +60,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 2. Asbestos Surveys & Inspections -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/asbestos.dedudo.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Asbestos Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -84,7 +84,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 3. Asset Management Surveys -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <span style="font-weight: 800; font-size: 0.85rem; color: #64748B;">Asset Management</span>
@@ -108,7 +108,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 4. Burrells Wharf -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/residents.burrellswharf.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Burrells Wharf Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -132,7 +132,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 5. Calfordseaden -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/calfordseaden.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Calfordseaden Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -156,7 +156,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 6. Elim Housing -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/elimhousing.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Elim Housing Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -180,7 +180,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 7. Elevate Safety Solutions Ltd -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/elevatesafetysolutions.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Elevate Safety Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -204,7 +204,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 8. FGC and Sons Ltd -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/fgcandsonsltd.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="FGC Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -228,7 +228,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 9. Fire Assessment Services -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/fireassessmentservices.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Fire Assessment Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -252,7 +252,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 10. Hemlow Ltd -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/hemlow.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Hemlow Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -276,7 +276,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 11. Ignis Safety Consultants -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/ignissalusconsultancy.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Ignis Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -300,7 +300,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 12. Islington Council -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/islington.gov.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Islington Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -324,7 +324,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 13. London City Fire -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/londoncityfire.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="London City Fire Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -348,7 +348,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 14. Make Consulting -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/makeconsulting.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Make Consulting Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -372,7 +372,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 15. NRC Contracts -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/nrccontracts.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="NRC Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -396,7 +396,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 16. Pilgrims Hospices -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/pilgrimshospices.org?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Pilgrims Hospices Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -420,7 +420,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 17. ProCheck -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/procheckdamptimber.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="ProCheck Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -444,7 +444,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 18. Provanhall Housing Association -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/provanhallha.org.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Provanhall Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -468,7 +468,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 19. Reveal Building Consultants -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/passivehouse.nz?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Reveal Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -492,7 +492,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 20. Rise Fire Safety -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/risefiresafety.com?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Rise Fire Safety Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -516,7 +516,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 21. Roberts Vardy Associates -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <span style="font-weight: 800; font-size: 0.85rem; color: #64748B;">Roberts Vardy Associates</span>
@@ -540,7 +540,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 22. Saffron Housing -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/saffronhousing.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Saffron Housing Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -564,7 +564,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 23. Saffron Housing (Staff View) -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/saffronhousing.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Saffron Housing Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -588,7 +588,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 24. Strategic Team Group -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/gallifordtry.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Strategic Team Group Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -612,7 +612,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 25. Strathmore Environmental Services Ltd -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/sesltd.org.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Strathmore Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -636,7 +636,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 26. Triman Fire Safety & Security -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/triman.co.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="Triman Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -660,7 +660,7 @@ templateEngineOverride: njk, html
       </div>
 
       <!-- 27. University of Birmingham -->
-      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: space-between;">
+      <div class="ps-review-card" style="flex: 1 1 360px; max-width: 380px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 24px rgba(0,0,0,0.04); transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; justify-content: space-between; will-change: transform, box-shadow, background-color;">
         <div style="padding: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; min-height: 40px;">
             <img src="https://img.logo.dev/birmingham.ac.uk?token=pk_Q2jjJfkQQLil6r4WSnCnQQ" alt="University of Birmingham Logo" style="max-height: 35px; max-width: 120px; object-fit: contain;">
@@ -696,9 +696,12 @@ templateEngineOverride: njk, html
 </div>
 
 <style>
+  /* Interactive Bento Card Hover Effect */
   .ps-review-card:hover {
     transform: translateY(-8px) scale(1.02) !important;
     border-color: #2563EB !important;
-    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.18) !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15), 0 0 0 1px rgba(37, 99, 235, 0.2) !important;
+    z-index: 10;
   }
 </style>
